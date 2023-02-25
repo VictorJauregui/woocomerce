@@ -1,9 +1,9 @@
 import React from 'react'
 import iconTop from '../../../assets/images/icon-top.png'
+import { ButtonsAddTocart } from '../../buttonsAddToCart/ButtonsAddToCart';
 
 const SingularProductMoreSell = ({product}) => {
     const {sell,img, type, name, price} = product;
-    console.log(sell)
 
   return (
     <div className="singular-product-more-sell">
@@ -16,7 +16,12 @@ const SingularProductMoreSell = ({product}) => {
         <div className="product-information">
             <p className="type-product">{type}</p>
             <p className="name-product">{name}</p>
-            <p className="price-product">{price}€</p>
+            <div className="price-and-addToCart">
+                <p className="price-product">{price}€</p>
+                <div className='btns-add-to-cart'>
+                    <ButtonsAddTocart />
+                </div>
+            </div>
         </div>
 
     </div>

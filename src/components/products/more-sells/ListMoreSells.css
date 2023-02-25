@@ -24,7 +24,6 @@
     grid-template-columns: 22% 22% 22% 22%;
     gap: 2%;
     justify-content: center;
-    margin-bottom: 20rem;
 }
 
 .singular-product-more-sell{
@@ -79,4 +78,16 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 400;
+}
+
+.price-and-addToCart{
+    display: flex;
+    align-items: center;
+}
+
+.btns-add-to-cart{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
 }

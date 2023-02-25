@@ -16,7 +16,7 @@ const ListMoreSells = () => {
       {MoreSellsProduct.map((product, i)=>{
           return(
             <div key={`${product.name}-${i}`}>
-              <SingularProductMoreSell product={product} />
+              <SingularProductMoreSell product={product}/>
             </div>
           )
         })}
