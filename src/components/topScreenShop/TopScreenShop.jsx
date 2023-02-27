@@ -1,23 +1,28 @@
-import React from 'react'
-import './TopScreenShop.css'
-import imgTopScreen from '../../assets/images/img-top-shop.png'
+import React from "react";
+import imgTopScreen from "../../assets/images/img-top-shop.png";
 
 const TopScreenShop = () => {
   return (
-    <div className="full-top-Screen-Shop">
-      <div className="left-text">
-        <h2 className="first-title">La tienda</h2>
-        <h2 className="second-title">de</h2>
-        <h2 className="third-title">FÚTBOL</h2>
-        <h2 className='first-subtitle'>para</h2>
-        <h2 className="second-subtitle">Entrenadores de Fútbol</h2>
+    <div className="bg-alonblue flex items-center justify-between h-[85vh]">
+      <div>
+        <h2 className="text-[7vw] leading-none ml-16 text-white">
+          La Tienda <br />
+          <span className="font-extralight"> de</span> <br />{" "}
+          <span className="font-bold bg-alonpurple"> FÚTBOL </span>
+        </h2>
+        <h2 className="text-[2vw] ml-16 text-white mt-4">
+          Para <span className="text-alonpurple"> Entrenadores de Fútbol </span>
+        </h2>
       </div>
-      <div className='right-img'>
-        <img className="img-top-top-screen-shop" src={imgTopScreen} alt="futbolistas luchando por balon" />
+      <div className="h-full">
+        <img
+          className="h-full flex items-end justify-end"
+          src={imgTopScreen}
+          alt="futbolistas luchando por balon"
+        />
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default TopScreenShop
+export default TopScreenShop;
