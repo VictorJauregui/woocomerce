@@ -1,75 +1,87 @@
-import React, { useEffect, useState } from 'react'
-import { ListOfTasks } from '../components/ListOfTaks/ListOfTasks'
-import './styles-pages.css';
+import React, { useContext, useState } from 'react'
+import Alberto from '../components/workerTaks/Alberto';
+import Borja from '../components/workerTaks/Borja';
+import Jesus from '../components/workerTaks/Jesus';
+import Miquel from '../components/workerTaks/Miquel';
+import Victor from '../components/workerTaks/Victor';
+import { toDoContext } from '../context/Context'
+import { v4 } from 'uuid'
+
 
 export const Home = () => {
-    
-    const [isVisible, setIsVisible] = useState(false)
-    const [allTasks, setAllTasks] = useState(JSON.parse(localStorage.getItem("allTasks")) || [])
-    const [task, setTask] = useState("");
+  const { todoList, setTodoList} = useContext(toDoContext);
 
- 
+  const addTodo = (e) => {
+    e.preventDefault()
+    setTodoList([...todoList, {...formData, id: v4()}])
+  }
+  
+  const [formData, setFormData ] = useState({
+    id: "",
+    task: "",
+    name: "",
+    priority: "Alta",
+    status: "Pending"
+  })
 
-    const saveData = () => {
-        console.log(allTasks)
-
-        if(task.trim()!== ''){
-            const newTask = {
-                task: task
-            }
-            setAllTasks((allTasks)=>[newTask, ...allTasks]);
-            setTask('');
-        }
-        setIsVisible(true);
-    }
-
-    useEffect(()=> {
-        localStorage.setItem("tasks", JSON.stringify(allTasks))
-    }, [allTasks])
-
-  return (
-    <div className='full-home'>
-        <div className='box'>
-            <form className='inputs' onSubmit={(e)=>{
-                setAllTasks([...allTasks, 
-                    {
-                    name: e.target.name.value, 
-                    task: e.target.task.value
-                }])
-                e.preventDefault();
-
-            }}>
-                <div className='div-input-what-to-do'>
-                    <label>Task</label>
-                    <input name="task" type="text" placeholder='hola'/>
+  
+    const handleChangeFormData = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+  
+    return (
+    <div className='bg-[#031442] h-screen' >
+        <form className='bg-white w-1/3 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={addTodo}>
+            <div className='grid grid-cols-4 w-full gap-3 px-10 pt-4' >
+                <div className='flex flex-col col-span-2'>
+                    <label className='text-xl' htmlFor="task">Tarea</label>
+                    <input className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded w-full"
+                        value={formData.task}
+                        name="task"
+                        type="text"
+                        id="task"
+                        onChange={handleChangeFormData}
+                        />
                 </div>
-                <div className='div-input-person'>
-                    <label>Who have to do it?</label>
-                    <input name="name" type="text" placeholder='hola' />
-                </div>
-                <div className='priority'>
-                    <label>Priority</label>
-                    <select name="priority "type="text" placeholder='hola'>
-                        <option value=''>Hight priority</option>
-                        <option value=''>Medium priority</option>
-                        <option value=''>Low priority</option>
+                <div className='flex flex-col'>
+                <label className='text-xl' htmlFor='worker'>Worker</label>   
+                    <select className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded"
+                        value={formData.name}
+                        name="name"
+                        id="worker"
+                        onChange={handleChangeFormData}>
+                        <option value="Victor">Víctor</option>
+                        <option value="Jesus">Jesús</option>
+                        <option value="Alberto">Alberto</option>
+                        <option value="Miquel">Miquel</option>
+                        <option value="Borja">Borja</option>
                     </select>
                 </div>
-                <div className='div-btn'>
-                    <button className='btn-save' type="submit" placeholder='hola' onClick={saveData}>Save</button>
+                <div className='flex flex-col'>
+                    <label className='text-xl' htmlFor="priority">Prioridad</label>
+                    <select className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded"
+                        value={formData.priority}
+                        name="priority"
+                        id="priority"
+                        onChange={handleChangeFormData}>
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
                 </div>
-            </form>
-            <p className='text-list-of-tasks'>List of tasks</p>
-            {
-                isVisible && allTasks.map((task) =>{
-                    return <ListOfTasks  allTasks={allTasks} setAllTasks={setAllTasks} task={task.task} name={task.name} taskComplete={task} setIsVisible={setIsVisible}/>
-            })
-                        
-                
-            }
-        </div>
+            </div>
+            <button className='bg-[#6366F1] py-1 my-7 text-white rounded w-1/6'>Asignar tarea</button>
+        </form>  
+            <div className='flex justify-around mt-10'>
+                <Miquel />
+                <Victor />
+                <Jesus />
+                <Borja />
+                <Alberto setFormData={setFormData} formData={formData}/>
+            </div> 
+
+
     </div>
+    
   )
 }
-
-export default Home
