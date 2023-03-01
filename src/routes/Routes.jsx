@@ -12,7 +12,7 @@ export const PathRoutes = () => {
         <Nav />
             <Routes >
                 <Route path='/' element={<Home />}/>
-                <Route path='/completed' element={<Completed />}/>
+                <Route path='/completado' element={<Completed />}/>
                 <Route path='/in-progress' element={<InProgress />}/>
             </Routes>
         </BrowserRouter>

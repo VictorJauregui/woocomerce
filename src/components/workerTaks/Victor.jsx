@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { toDoContext } from '../../context/Context';
 import rubish from '../../assets/images/rubish.png'
 import working from '../../assets/images/working.png'
+import { NavLink } from 'react-router-dom';
 
 const Victor = () => {
 
@@ -32,7 +33,9 @@ const Victor = () => {
                 <div className={`${color} w-5/6 rounded border flex flex-col`}>
                     <p className='m-2'>{victor.task}</p>
                     <div className='flex gap-1 justify-end mb-2 mr-2'>
-                        <img className='w-6 h-6 cursor-pointer' src={working} alt="" onClick={() => inProgress(victor)}/>   
+                        <NavLink to="/in-progress">
+                            <img className='w-6 h-6 cursor-pointer' src={working} alt="" onClick={() => inProgress(victor)} />
+                        </NavLink>   
                         <img className='w-6 h-6 cursor-pointer' src={rubish} alt="" onClick={() => deleteTask(victor)} />   
                     </div>     
                 </div>
