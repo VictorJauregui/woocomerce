@@ -7,11 +7,11 @@ const ListMoreSells = () => {
 
   return (
     <div>
-      <div className="">
-        <img className="" src={imgTop} alt="" />
-        <h2 className="">Productos <span>más vendidos</span> este mes</h2>
+      <div className="flex ml-20 items-center mt-40 mb-20">
+        <img className="w-20" src={imgTop} alt="" />
+        <h2 className="text-[3rem] ml-10 font-bold text-[#031442]">Productos <span className='text-[#6366F1]'>más vendidos</span> este mes</h2>
       </div>
-      <div className="">
+      <div className="grid grid-cols-4 gap-5 mx-5">
       {MoreSellsProduct.map((product, i)=>{
           return(
             <div key={`${product.name}-${i}`}>
