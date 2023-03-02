@@ -18,6 +18,12 @@ export const InProgress = () => {
         setTodoList([...filterTask, {...task, status: "Completed" }])
     }   
 
+    const deleteTask = (task) => {
+        const filterTask = todoList.filter((todo) => {
+            return todo.id !== task.id
+        })
+        setTodoList([...filterTask])
+    }
 
     
     return (
@@ -33,7 +39,7 @@ export const InProgress = () => {
                         <NavLink to="/completado" >
                             <img className='w-6 cursor-pointer' src={check} alt="" onClick={() => completed(task)} />
                         </NavLink>
-                        <img className='w-6 flex items-center cursor-pointer' src={rubish} alt="" />
+                        <img className='w-6 flex items-center cursor-pointer' src={rubish} alt="" onClick={() => deleteTask(task)}/>
                     </div>
                 )
                 })
