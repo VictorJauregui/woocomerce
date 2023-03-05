@@ -11,7 +11,7 @@ import { allContext } from '../context/Context';
 
 
 const Shop = () => {
-const {isOpen, setIsOpen} = useContext(allContext)
+const { isOpen } = useContext(allContext)
 
   return (
     <div>

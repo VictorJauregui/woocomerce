@@ -1,14 +1,10 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useState } from 'react'
 
 export const allContext = createContext();
 
 const Context = ({children}) => {
-    const [products, setProducts] = useState(JSON.parse(localStorage.getItem("product")) || []);
+    const [products, setProducts] = useState([]);
     const [isOpen, setIsOpen] = useState(false)
-    
-    useEffect (() => {
-        localStorage.setItem("product", JSON.stringify(products))
-    }, [products])
     
     
   return (

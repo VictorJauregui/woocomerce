@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Footer from '../components/footer/Footer';
 import rondos from '../assets/images/ebooks/Rondos.png'
 import rubish from '../assets/images/rubish.png'
 import card from '../assets/images/card.png'
 import paypal from '../assets/images/paypal.png'
 import Counter from '../components/Counter';
+import { allContext } from '../context/Context';
 
 const Checkout = () => {
+  const { products, setProducts } = useContext(allContext)
+  console.log(products)
+
+  const deleteProduct = (product) => {
+    const element = products.filter((element) => 
+    element.name !== product.name)
+      setProducts(element)  
+  }
+
   return (
+
     <div>
       <div className='flex w-full'>
         <div className='w-2/4 mt-40 ml-40'>
@@ -19,18 +30,24 @@ const Checkout = () => {
               <p className='grid col-span-2'>Cantidad</p>
               <p>Precio</p>
             </div>
-            <div className='mt-5 grid grid-cols-9 items-center text-center text-[#031442] text-[1.2rem] font-light'>
-              <img className='grid col-span-2 w-40' src={rondos} alt="" />
-              <p className='grid col-span-3'>Ebook Rondos</p>
-              <div className='col-span-2'>
-                  <Counter />
-              </div>
-              <p>23.95€</p>
-              <div className='flex justify-end'>
-              <img className='w-5 mr-5' src={rubish} alt="" />
-              </div>
-              
-            </div>
+            {
+              products.map((product) => {
+                return (
+                  <div className='mt-5 grid grid-cols-9 items-center text-center text-[#031442] text-[1.2rem] font-light'>
+                    <img className='grid col-span-2 w-40' src={product.img} alt="" />
+                    <p className='grid col-span-3'>{product.name}</p>
+                    <div className='col-span-2'>
+                        <Counter />
+                    </div>
+                    <p>{product.price}</p>
+                    <div className='flex justify-end'>
+                    <img className='w-5 mr-5 cursor-pointer' src={rubish} alt="" onClick={() => deleteProduct(product)}/>
+                    </div>
+                   </div>
+                )
+              })
+            }
+            
             <div className='flex border-t border-t-[#dddddd] grid grid-cols-9 text-center py-8 mt-10 text-[#031442]'>
               <p className='grid col-span-4'></p>
               <p className='grid col-span-1 '></p>

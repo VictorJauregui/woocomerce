@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
+import { allContext } from '../context/Context';
 
 const Counter = () => {
-    const [count, setCount] = useState(1);
+  const [count, setCount ] = useState(1)
 
     const decrement = () => {
-        setCount(prevState => prevState -1 < 1 ? 1 : prevState -1);
-         
-        
+        setCount(prevState => prevState -1 < 1 ? 1 : prevState -1);    
     }
 
     const increment = () => {
@@ -15,9 +14,9 @@ const Counter = () => {
 
   return (
     <div className='flex justify-center'>
-        <button className='bg-red-500 px-2.5 mx-1 bg-[#dbdbdb] rounded' onClick={() => decrement()}>-</button>
+        <button className='bg-gray-300 px-2.5 mx-1 bg-[#dbdbdb] rounded' onClick={() => decrement()}>-</button>
         <p className='border-2 border-gray-300 px-5 rounded'>{count}</p>
-        <button className='bg-red-500 px-2 mx-1 bg-[#dbdbdb] rounded' onClick={() => increment()}>+</button>
+        <button className='bg-gray-300 px-2 mx-1 bg-[#dbdbdb] rounded' onClick={() => increment()}>+</button>
     </div>
   )
 }
