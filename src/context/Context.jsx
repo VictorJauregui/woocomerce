@@ -1,12 +1,11 @@
 import React, { Children, createContext, useContext, useState } from 'react'
 
-const context = () => {
+const allContext = createContext();
 
-    const allContext = createContext();
-    const contextProvider = useContext(allContext)
+const Context = ({children}) => {
     const [allProducts, setAllProducts] = useState([]);
     const [isOpen, setIsOpen] = useState(false)
-
+    
   return (
     <div>
         <contextProvider.Provider value={{allProducts, setAllProducts, isOpen, setIsOpen}}>
@@ -17,3 +16,4 @@ const context = () => {
 }
 
 export default context
+
