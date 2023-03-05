@@ -1,6 +1,6 @@
-import React, { Children, createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
-const allContext = createContext();
+export const allContext = createContext();
 
 const Context = ({children}) => {
     const [products, setProducts] = useState(JSON.parse(localStorage.getItem("product")) || []);

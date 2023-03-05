@@ -3,7 +3,7 @@ import iconTop from '../../../assets/images/icon-top.png'
 import { ButtonsAddTocart } from '../../buttonsAddToCart/ButtonsAddToCart';
 
 const SingularProductMoreSell = ({product}) => {
-    const {sell,img, type, name, price} = product;
+    const {sell,img, type, name, price } = product;
 
   return (
     <div className='grid bg-[#002259] gap-10 w-full mr-10 border-2 rounded-2xl'>
@@ -18,7 +18,7 @@ const SingularProductMoreSell = ({product}) => {
             <div className='flex flex-wrap my-4 justify-between'>
                 <p className='text-[2rem] font-semibold' >{price}€</p>
                 <div className='flex justify-end items-center'>
-                    <ButtonsAddTocart width='w-[150px]'/>
+                    <ButtonsAddTocart width='w-[150px]' product={product}/>
                 </div>
             </div>
         </div>

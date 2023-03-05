@@ -9,7 +9,11 @@ export const MoreSellsProduct = [
         type: "EBOOK",
         name: "ATAQUE-DEFENSA",
         price: 12.95,
-        img: ataqueDefensa
+        img: ataqueDefensa,
+        fistParagraph: "HOLA",
+        secondParagraph: "HOLA",
+        thirdParagraph: "HOLA",
+        fourthParagraph: "HOLA"
     },
 
     {
@@ -18,6 +22,10 @@ export const MoreSellsProduct = [
         name: "CUANT. CARGAS",
         price: 49.95,
         img: circuitosFisicos,
+        fistParagraph: "HOLA",
+        secondParagraph: "HOLA",
+        thirdParagraph: "HOLA",
+        fourthParagraph: "HOLA"
     },
 
     {
@@ -26,6 +34,10 @@ export const MoreSellsProduct = [
         name: "PLANIFICACION SENIOR",
         price: 127.95,
         img: planificacionSenior,
+        fistParagraph: "HOLA",
+        secondParagraph: "HOLA",
+        thirdParagraph: "HOLA",
+        fourthParagraph: "HOLA"
     },
 
     {
@@ -34,6 +46,10 @@ export const MoreSellsProduct = [
         name: "JUEGOS DE POSICIÓN",
         price: 8.95,
         img: finalizaciones,
+        fistParagraph: "HOLA",
+        secondParagraph: "HOLA",
+        thirdParagraph: "HOLA",
+        fourthParagraph: "HOLA"
     },
 
 ]

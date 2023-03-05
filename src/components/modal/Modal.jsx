@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import rondos from '../../assets/images/ebooks/Rondos.png'
 import close from '../../assets/images/close.png'
 import items from '../../assets/images/items.png'
+import { allContext } from '../../context/Context'
 
 
 const Modal = () => {
+    const { setIsOpen} = useContext(allContext)
+    const closeModal = () => {
+        setIsOpen(false)
+    }
+
+
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto bg-black/50">
         <div className="flex items-center justify-center min-h-screen">
@@ -14,7 +21,7 @@ const Modal = () => {
                 <div>
                     <div className='flex justify-between'>
                         <h2 className='font-bold text-[2.2rem] text-[#031442]'>Producto</h2>
-                        <img className='w-4 h-4' src={close} alt="" />
+                        <img className='w-4 h-4 cursor-pointer' src={close} alt="" onClick={closeModal}/>
                     </div>
                     <p className='font-semibold text-[1.5rem] text-[#6366F1]'>EBOOK RONDOS</p>
                     <div className='flex w-full '>
