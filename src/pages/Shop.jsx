@@ -10,7 +10,7 @@ import TopScreenShop from '../components/topScreenShop/TopScreenShop';
 
 
 const Shop = () => {
-const [isOpen, setIsOpen] = useState(false)
+const [ isOpen ] = useState(false)
 
   return (
     <div>

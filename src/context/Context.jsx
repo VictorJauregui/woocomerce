@@ -1,19 +1,21 @@
-import React, { Children, createContext, useContext, useState } from 'react'
+import React, { Children, createContext, useContext, useEffect, useState } from 'react'
 
 const allContext = createContext();
 
 const Context = ({children}) => {
-    const [allProducts, setAllProducts] = useState([]);
+    const [products, setProducts] = useState(JSON.parse(localStorage.getItem("product")) || []);
     const [isOpen, setIsOpen] = useState(false)
     
+    useEffect (() => {
+        localStorage.setItem("product", JSON.stringify(products))
+    }, [products])
+    
+    
   return (
-    <div>
-        <contextProvider.Provider value={{allProducts, setAllProducts, isOpen, setIsOpen}}>
-            {Children}
-        </contextProvider.Provider>
-    </div>
+    <allContext.Provider value={{products, setProducts, isOpen, setIsOpen}}>
+        {children}
+    </allContext.Provider>
+
   )
 }
-
-export default context
-
+export default Context
