@@ -17,7 +17,7 @@ const Modal = () => {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto bg-black/50">
         <div className="flex items-center justify-center min-h-screen">
-            <div className="fixed inset-0 ">
+            <div className="fixed inset-0">
             </div>
             <div className="bg-white rounded-lg shadow-lg p-8 mx-4 z-30 w-2/4">
                 <div>
