@@ -18,7 +18,7 @@ const SingularProductBestPrices = ({productDescount}) => {
             <p className='text-[#D43939] line-through text-[1.4rem]' >{priceBefore}€</p>
             <p className='text-[2.8rem] font-bold ml-4' >{priceNow}€</p>
             <div className='flex justify-end w-full my-5'>
-              <ButtonsAddTocart size="btn-lg"/>
+              <ButtonsAddTocart width="w-[300px]"/>
             </div>
 
         </div>

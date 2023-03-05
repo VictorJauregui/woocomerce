@@ -12,7 +12,7 @@ const EbookIndividual = ({ebook}) => {
             <div className='flex items-center'>
                 <p className='text-[2rem] font-bold' >{price}€</p>
                 <div className='flex justify-end w-full my-5'>
-                    <ButtonsAddTocart size="btn-sm"/>
+                    <ButtonsAddTocart width="w-[60%]"/>
                 </div>
             </div>
         </div>

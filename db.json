@@ -1,0 +1,219 @@
+
+
+{
+
+"BestDescount": [
+    {
+        "sell": "OFERTA ACTUAL",
+        "type": "EBOOKS",
+        "name": "NUESTROS 12 EBOOKS",
+        "priceBefore": 144.05,
+        "priceNow": 54.95,
+        "img": "../images/productBestPrices/all-books.png"
+    },
+
+    {
+        "sell": "OFERTA ACTUAL",
+        "type": "EXCELS",
+        "name": "2 EXCELS PARA ENTRENADORES DE FÚTBOL",
+        "priceBefore": 122.95,
+        "priceNow": 39.95,
+        "img": "../images/productBestPrices/two-excels.png"
+    }
+
+],
+
+
+
+"Ebooks": [
+    {
+        "type": "EBOOK",
+        "name": "ATAQUE-DEFENSA",
+        "price": 8,
+        "img": "../images/ebooks/ataque-defensa.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "A. COMBINADAS",
+        "price": 9,
+        "img": "../images/ebooks/acciones-combinadas.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "CIRCUITOS-FISICOS",
+        "price": 12,
+        "img": "../images/ebooks/circuitos-fisicos.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "JUEGOS DE POSICIÓN",
+        "price": 12,
+        "img": "../images/ebooks/juegos-posicion.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "ABP",
+        "price": 12,
+        "img": "../images/ebooks/abp.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "P. ESPECÍFICOS",
+        "price": 9,
+        "img": "../images/ebooks/trabajo-puestos-especificos.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "TRABAJO POR LINEAS",
+        "price": 18,
+        "img": "../images/ebooks/trabajo-lineas.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "TECNIFICACIÓN",
+        "price": 16,
+        "img": "../images/ebooks/tecnificacion.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "RUEDAS DE PASE",
+        "price": 7,
+        "img": "../images/ebooks/rueda-pases.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "FINALIZACIONES",
+        "price": 11,
+        "img": "../images/ebooks/finalizaciones.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "P. CONDICIONADOS",
+        "price": 12,
+        "img": "../images/ebooks/partidos-condicionados.png"
+    },
+
+    {
+        "type": "EBOOK",
+        "name": "PARTIDOS REDUCIDOS",
+        "price": 13,
+        "img": "../images/ebooks/partidos-reducidos.png"
+    }
+
+],
+
+"MoreSellsProduct" : [
+    {
+        "sell": "TOP VENTAS",
+        "type": "EBOOK",
+        "name": "ATAQUE-DEFENSA",
+        "price": 12.95,
+        "img": "ataqueDefensa"
+    },
+
+    {
+        "sell": "TOP VENTAS",
+        "type": "EXCEL",
+        "name": "CUANT. CARGAS",
+        "price": 49.95,
+        "img": "circuitosFisicos"
+    },
+
+    {
+        "sell": "TOP VENTAS",
+        "type": "PLANIFICACION",
+        "name": "PLANIFICACION SENIOR",
+        "price": 127.95,
+        "img": "planificacionSenior"
+    },
+
+    {
+        "sell": "TOP VENTAS",
+        "type": "EBOOK",
+        "name": "JUEGOS DE POSICIÓN",
+        "price": 8.95,
+        "img": "finalizaciones"
+    }
+
+],
+
+"Excels": [
+    {
+        "type": "EXCEL",
+        "name": "PROGR. TEMPORADA",
+        "price": 47,
+        "img": "../images/excels/analisis.png"
+    },
+
+    {
+        "type": "EXCEL",
+        "name": "SESIONES FUERZA",
+        "price": 12,
+        "img": "../images/excels/fuerza.png"
+    },
+
+    {
+        "type": "EXCEL",
+        "name": "PLANIFICACIÓN TEMP.",
+        "price": 57,
+        "img": "../images/excels/planificacion.png"
+    },
+
+    {
+        "type": "EXCEL",
+        "name": "ESTADÍSTICAS",
+        "price": 14,
+        "img": "../images/excels/estadisticas.png"
+    },
+
+    {
+        "type": "EXCEL",
+        "name": "CUANT. CARGAS",
+        "price": 49,
+        "img": "../images/excels/cargas.png"
+    }
+
+],
+
+"Planificaciones": [
+    {
+        "type": "PLANIFICACIÓN",
+        "name": "INFANTIL",
+        "price": 64,
+        "img": "../images/planificaciones/infantiles.png"
+    },
+
+    {
+        "type": "PLANIFICACIÓN",
+        "name": "CADETE",
+        "price": 67,
+        "img": "../images/planificaciones/cadetes.png"
+    },
+
+    {
+        "type": "PLANIFICACIÓN",
+        "name": "JUVENIL",
+        "price": 80,
+        "img": "../images/planificaciones/juveniles.png"
+    },
+
+    {
+        "type": "PLANIFICACIÓN",
+        "name": "SENIOR",
+        "price": 90,
+        "img": "../images/planificaciones/senior.png"
+    }
+
+]
+
+}

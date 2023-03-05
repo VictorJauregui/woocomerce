@@ -1,11 +1,11 @@
 import React from 'react'
 import { ButtonsAddTocart } from '../../buttonsAddToCart/ButtonsAddToCart'
 
-const ExcelIndividual = ({excel}) => {
-    const {type, name, price, img} = excel
+const PlanificacionesIndividual = ({ planificacion }) => {
+    const {type, name, price, img} = planificacion
   return (
     <div className='grid bg-[#002259] gap-10 w-full mr-10 border-2 rounded-2xl'>
-        <img className='mx-auto w-[75%] pt-8' src={img} alt="product" />
+        <img className='mx-auto w-[90%] pt-8' src={img} alt="product" />
         <div className='text-white mx-8'>
             <p className='text-[1.4rem] font-extralight' >{type}</p>
             <p className='text-[1.4rem] font-semibold' >{name}</p>
@@ -20,4 +20,4 @@ const ExcelIndividual = ({excel}) => {
   )
 }
 
-export default ExcelIndividual
+export default PlanificacionesIndividual
