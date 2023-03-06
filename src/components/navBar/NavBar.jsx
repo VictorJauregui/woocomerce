@@ -12,7 +12,7 @@ const NavBar = () => {
         <NavLink to="/shop" className="text-white text-lg font-extralight">
           Tienda
         </NavLink>
-        <NavLink to="*" className="text-white text-lg font-extralight">
+        <NavLink to="/pedido-realizado" className="text-white text-lg font-extralight">
           Precios
         </NavLink>
         <NavLink to="/checkout" className="text-white text-lg font-extralight">

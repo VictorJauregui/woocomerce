@@ -3,7 +3,7 @@ import iconBestPrices from '../../../assets/images/icon-best-prices.png'
 import { ButtonsAddTocart } from '../../buttonsAddToCart/ButtonsAddToCart'
 
 const SingularProductBestPrices = ({productDescount}) => {
-    const {sell, type, name, priceBefore, priceNow, img} = productDescount
+    const { sell, type, name, priceBefore, price, img } = productDescount
   return (
     <div className='grid bg-[#002259] gap-10 w-full mr-10 border-2 rounded-2xl'>
         <div className='border border-b-white flex justify-center items-center py-4'>
@@ -16,9 +16,9 @@ const SingularProductBestPrices = ({productDescount}) => {
           <p className='text-[2rem] font-semibold' >{name}</p>
           <div className='flex items-center'>
             <p className='text-[#D43939] line-through text-[1.4rem]' >{priceBefore}€</p>
-            <p className='text-[2.8rem] font-bold ml-4' >{priceNow}€</p>
+            <p className='text-[2.8rem] font-bold ml-4' >{price}€</p>
             <div className='flex justify-end w-full my-5'>
-              <ButtonsAddTocart width="w-[300px]"/>
+              <ButtonsAddTocart width="w-[300px]" product={productDescount}/>
             </div>
 
         </div>

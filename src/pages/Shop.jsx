@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Footer from '../components/footer/Footer';
 import Modal from '../components/modal/Modal';
+import ModalAddToCart from '../components/modal/ModalAddToCart';
 import ListBestPrices from '../components/products/bestPrices/ListBestPrices';
 import ListEbooks from '../components/products/ebooks/ListEbooks';
 import ListExcels from '../components/products/excels/ListExcels';
@@ -11,7 +12,8 @@ import { allContext } from '../context/Context';
 
 
 const Shop = () => {
-const { isOpen } = useContext(allContext)
+const { isOpen, counterCart } = useContext(allContext)
+
 
   return (
     <div>
@@ -19,6 +21,10 @@ const { isOpen } = useContext(allContext)
      { isOpen && 
       <Modal />
      }
+
+      { counterCart >= 1 &&
+        <ModalAddToCart />
+      }
      
      <ListMoreSells />
      <ListBestPrices />

@@ -1,20 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Footer from '../components/footer/Footer';
-import rondos from '../assets/images/ebooks/Rondos.png'
 import rubish from '../assets/images/rubish.png'
 import card from '../assets/images/card.png'
 import paypal from '../assets/images/paypal.png'
 import Counter from '../components/Counter';
 import { allContext } from '../context/Context';
+import { NavLink } from 'react-router-dom';
 
 const Checkout = () => {
-  const { products, setProducts } = useContext(allContext)
-  console.log(products)
+
+  const { products, setProducts, setCountesCart } = useContext(allContext)
 
   const deleteProduct = (product) => {
     const element = products.filter((element) => 
     element.name !== product.name)
       setProducts(element)  
+
+    setCountesCart(prevState => prevState -1)
   }
 
   return (
@@ -31,15 +33,16 @@ const Checkout = () => {
               <p>Precio</p>
             </div>
             {
-              products.map((product) => {
+              products.sort((a, b) => (a.price > b.price) ? 1: -1).map((product) => {
+
                 return (
                   <div className='mt-5 grid grid-cols-9 items-center text-center text-[#031442] text-[1.2rem] font-light'>
                     <img className='grid col-span-2 w-40' src={product.img} alt="" />
                     <p className='grid col-span-3'>{product.name}</p>
                     <div className='col-span-2'>
-                        <Counter />
+                        <Counter product={product}/>
                     </div>
-                    <p>{product.price}</p>
+                    <p>{product.price * product.qty}€</p>
                     <div className='flex justify-end'>
                     <img className='w-5 mr-5 cursor-pointer' src={rubish} alt="" onClick={() => deleteProduct(product)}/>
                     </div>
@@ -47,13 +50,13 @@ const Checkout = () => {
                 )
               })
             }
-            
             <div className='flex border-t border-t-[#dddddd] grid grid-cols-9 text-center py-8 mt-10 text-[#031442]'>
               <p className='grid col-span-4'></p>
               <p className='grid col-span-1 '></p>
               <h2 className='grid col-span-2  font-bold text-[1.3rem]'>TOTAL</h2>
               <h2 className='font-bold text-[1.3rem]'>99€</h2>
             </div>
+            
           </div>
 
         </div>
@@ -103,7 +106,9 @@ const Checkout = () => {
                   </div>
                 </div>
                 <div className='flex justify-end'>
-                <button className='mt-8 bg-[#6366F1] py-2 px-10 rounded-lg text-white text-[1.2rem]'>Realizar pago</button>
+                  <NavLink to='../pedido-realizado'>
+                    <button className='mt-8 bg-[#6366F1] py-2 px-10 rounded-lg text-white text-[1.2rem]'>Realizar pago</button>
+                  </NavLink>
                 </div>
                 
               </form>

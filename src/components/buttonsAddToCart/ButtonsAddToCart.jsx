@@ -3,8 +3,8 @@ import iconInformation from '../../assets/images/icon-information.png'
 import { allContext } from '../../context/Context'
 
 export const ButtonsAddTocart = ({ width, product }) => {
-    const { setIsOpen } = useContext(allContext)
-    const { products, setProducts } = useContext(allContext)
+    const { setIsOpen, setCountesCart, products, setProducts  } = useContext(allContext)
+
 
     const info = (product) => {
         setIsOpen(true)
@@ -14,6 +14,8 @@ export const ButtonsAddTocart = ({ width, product }) => {
 
     const addToCart = (product) => {
         setProducts([...products, product])
+        setCountesCart(prevState => prevState +1)
+
     }
 
 

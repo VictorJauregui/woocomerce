@@ -12,7 +12,7 @@ const ExcelIndividual = ({excel}) => {
             <div className='flex items-center'>
                 <p className='text-[2rem] font-bold' >{price}€</p>
                 <div className='flex justify-end w-full my-5'>
-                    <ButtonsAddTocart width="w-[60%]"/>
+                    <ButtonsAddTocart width="w-[60%]" product={excel}/>
                 </div>
             </div>
         </div>

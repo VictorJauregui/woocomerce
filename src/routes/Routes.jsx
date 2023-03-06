@@ -5,6 +5,7 @@ import Checkout from '../pages/Checkout'
 import Home from '../pages/Home'
 import Shop from '../pages/Shop'
 import Error from '../pages/Error'
+import PedidoRealizado from '../pages/PedidoRealizado'
 
 const PathRoutes = () => {
   return (
@@ -14,7 +15,7 @@ const PathRoutes = () => {
             <Route path='/' element= {<Home />} />
             <Route path='/shop' element= {<Shop />} />
             <Route path='/checkout' element= {<Checkout />} />
-            <Route path='*' element= {<Error />} />
+            <Route path='/pedido-realizado' element= {<PedidoRealizado />} />
         </Routes>
     </BrowserRouter>
   )
