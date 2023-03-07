@@ -8,8 +8,13 @@ import { allContext } from '../context/Context';
 import { NavLink } from 'react-router-dom';
 
 const Checkout = () => {
+  const [visible, setVisible] =useState(false)
 
+
+  
   const { products, setProducts, setCountesCart } = useContext(allContext)
+  const total = products.reduce((acc, current) => acc + current.price * current.qty, 0);
+  console.log(products)
 
   const deleteProduct = (product) => {
     const element = products.filter((element) => 
@@ -32,9 +37,9 @@ const Checkout = () => {
               <p className='grid col-span-2'>Cantidad</p>
               <p>Precio</p>
             </div>
+            <div className='max-h-96 overflow-y-scroll'>
             {
-              products.sort((a, b) => (a.price > b.price) ? 1: -1).map((product) => {
-
+              products.sort((a, b) => (a.name > b.name) ? 1: -1).map((product) => {
                 return (
                   <div className='mt-5 grid grid-cols-9 items-center text-center text-[#031442] text-[1.2rem] font-light'>
                     <img className='grid col-span-2 w-40' src={product.img} alt="" />
@@ -42,7 +47,7 @@ const Checkout = () => {
                     <div className='col-span-2'>
                         <Counter product={product}/>
                     </div>
-                    <p>{product.price * product.qty}€</p>
+                    <p>{(product.price * product.qty).toFixed(2)}€</p>
                     <div className='flex justify-end'>
                     <img className='w-5 mr-5 cursor-pointer' src={rubish} alt="" onClick={() => deleteProduct(product)}/>
                     </div>
@@ -50,11 +55,12 @@ const Checkout = () => {
                 )
               })
             }
+            </div>
             <div className='flex border-t border-t-[#dddddd] grid grid-cols-9 text-center py-8 mt-10 text-[#031442]'>
               <p className='grid col-span-4'></p>
               <p className='grid col-span-1 '></p>
               <h2 className='grid col-span-2  font-bold text-[1.3rem]'>TOTAL</h2>
-              <h2 className='font-bold text-[1.3rem]'>99€</h2>
+              <h2 className='font-bold text-[1.3rem]'>{total.toFixed(2)}€</h2>
             </div>
             
           </div>
@@ -63,7 +69,9 @@ const Checkout = () => {
         <div className='w-2/4 mt-40 ml-20 pr-20 mr-40'>
           <h2 className='text-4xl font-bold mb-10 text-[#031442]'>Método de Pago</h2>
           <div>
-            <form className='grid grid-cols-2 text-[#031442]' action="">
+            <form className='grid grid-cols-2 text-[#031442]' onSubmit={ev =>
+              ev.preventDefault()
+            } >
               <div className='flex flex-col'>
                 <label htmlFor="">Nombre</label>
                 <input className='border-2 h-[2rem] rounded mr-10 mt-1' type="text"/>
@@ -76,8 +84,14 @@ const Checkout = () => {
                 <label htmlFor="">Correo Electrónico</label>
                 <input className='border-2 h-[2rem] rounded mr-10 mt-1' type="text" />
               </div>
+              <div className='flex items-end justify-end'>
+                <button className='flex items-center justify-center h-[2rem] bg-[#6366F1] py-2 px-10 rounded-lg text-white text-[1.2rem] mr-10' onClick={()=>setVisible(true)}>Ir a datos bancarios</button>
+              </div>
             </form>
           </div>
+
+          {
+            visible && (
           <div className='mt-20 '>
             <div className='flex w-full gap-1'>
               <div className='w-2/4 bg-[#ECECEC] flex items-center justify-center gap-3 rounded-t-lg'>
@@ -115,6 +129,9 @@ const Checkout = () => {
             </div>
 
           </div>
+
+            )
+          }
         </div> 
       </div>
       <Footer />

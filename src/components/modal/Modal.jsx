@@ -13,6 +13,13 @@ const Modal = () => {
         setIsOpen(false)
     }
 
+    // const addToCart = (product) => {
+    //     setIsOpen(false)
+    //     setCountesCart(prevState => prevState +1)
+    //     setProducts([...products, product])
+    //     setChoosedProduct(true)
+    // }
+
 
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto bg-black/50">

@@ -190,7 +190,7 @@
         "type": "EBOOK",
         "name": "ATAQUE-DEFENSA",
         "price": 12.95,
-        "img": "ataqueDefensa",
+        "img": "../images/ebooks/ataque-defensa.png",
         "qty": 1,
         "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
         "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
@@ -200,10 +200,10 @@
 
     {
         "sell": "TOP VENTAS",
-        "type": "EXCEL",
-        "name": "CUANT. CARGAS",
+        "type": "EBOOK",
+        "name": "PART. REDUCIDOS",
         "price": 49.95,
-        "img": "circuitosFisicos",
+        "img": "../images/ebooks/partidos-reducidos.png",
         "qty": 1,
         "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
         "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
@@ -216,7 +216,7 @@
         "type": "PLANIFICACION",
         "name": "PLANIFICACION SENIOR",
         "price": 127.95,
-        "img": "planificacionSenior",
+        "img": "../images/planificaciones/senior.png",
         "qty": 1,
         "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
         "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
@@ -229,7 +229,7 @@
         "type": "EBOOK",
         "name": "JUEGOS DE POSICIÓN",
         "price": 8.95,
-        "img": "finalizaciones",
+        "img": "../images/ebooks/juegos-posicion.png",
         "qty": 1,
         "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
         "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
@@ -352,5 +352,6 @@
     }
 
 ]
+
 
 }

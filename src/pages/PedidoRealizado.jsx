@@ -6,6 +6,7 @@ import Footer from '../components/footer/Footer';
 
 const PedidoRealizado = () => {
   const { products } = useContext(allContext)
+  const total = products.reduce((acc, current) => acc + current.price * current.qty, 0);
 
 
 
@@ -38,7 +39,7 @@ const PedidoRealizado = () => {
             <div className='flex border-t border-t-[#dddddd] grid grid-cols-9 text-center pt-10 mt-10 text-[#031442]'>
               <p className='grid col-span-5'></p>
               <h2 className='grid col-span-2  font-bold text-[1.3rem]'>TOTAL</h2>
-              <h2 className='grid col-span-2 font-bold text-[1.3rem] mr-6'>99€</h2>
+              <h2 className='grid col-span-2 font-bold text-[1.3rem] mr-6'>{total.toFixed(2)}€</h2>
             </div>
       </div>
       <p className='mt-20'>Desde Alonbalon queremos darte las gracias por confiar en nosotros y deseamos que los productos cumplan tus expectativas y te ayuden a ser aún mejor profesional.</p>
