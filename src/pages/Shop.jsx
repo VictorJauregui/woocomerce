@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Footer from '../components/footer/Footer';
 import Modal from '../components/modal/Modal';
 import ModalAddToCart from '../components/modal/ModalAddToCart';
+import NavBar from '../components/navBar/NavBar';
 import ListBestPrices from '../components/products/bestPrices/ListBestPrices';
 import ListEbooks from '../components/products/ebooks/ListEbooks';
 import ListExcels from '../components/products/excels/ListExcels';
@@ -17,6 +18,7 @@ const { isOpen, counterCart } = useContext(allContext)
 
   return (
     <div>
+      <NavBar />
      <TopScreenShop />
      { isOpen && 
       <Modal />

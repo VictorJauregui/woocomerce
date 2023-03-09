@@ -6,6 +6,7 @@ import paypal from '../assets/images/paypal.png'
 import Counter from '../components/Counter';
 import { allContext } from '../context/Context';
 import { NavLink } from 'react-router-dom';
+import NavBar from '../components/navBar/NavBar';
 
 const Checkout = () => {
   const [visible, setVisible] =useState(false)
@@ -24,8 +25,12 @@ const Checkout = () => {
     setCountesCart(prevState => prevState -1)
   }
 
-  return (
 
+
+
+  return (
+    <div>
+    <NavBar />
     <div>
       <div className='flex w-full'>
         <div className='w-2/4 mt-40 ml-40'>
@@ -135,6 +140,7 @@ const Checkout = () => {
         </div> 
       </div>
       <Footer />
+    </div>
     </div>
     
     

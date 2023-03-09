@@ -1,23 +1,25 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import NavBar from '../components/navBar/NavBar'
 import Checkout from '../pages/Checkout'
-import Home from '../pages/Home'
 import Shop from '../pages/Shop'
-import Error from '../pages/Error'
 import PedidoRealizado from '../pages/PedidoRealizado'
 import Login from '../pages/Login'
+import { CHECKOUT, PEDIDO_REALIZADO } from '../config/routes/paths'
+import { PublicRoute } from '../publicRouter/PublicRouter'
+import { PrivateRoute } from '../privateRoute/PrivateRoute'
 
 const PathRoutes = () => {
   return (
     <BrowserRouter>
-    <NavBar />
         <Routes>
-            <Route path='/' element= {<Home />} />
-            <Route path='/login' element= {<Login/>} />
-            <Route path='/shop' element= {<Shop />} />
-            <Route path='/checkout' element= {<Checkout />} />
-            <Route path='/pedido-realizado' element= {<PedidoRealizado />} />
+          <Route path='/login' element={<PublicRoute />} >
+            <Route index element= {<Login/>} />
+          </Route>
+          <Route path='/' element={<PrivateRoute />}>
+            <Route index element= {<Shop />} />
+            <Route path={CHECKOUT} element= {<Checkout />} />
+            <Route path={PEDIDO_REALIZADO} element= {<PedidoRealizado />} />
+          </Route>
         </Routes>
     </BrowserRouter>
   )

@@ -6,7 +6,7 @@ const ExcelIndividual = ({excel}) => {
     const {type, name, price, img} = excel
   return (
     <div className={choosedProduct ? 'grid bg-gray-300  gap-10 w-full mr-10 border-2 rounded-2xl' : 'grid bg-[#002259] gap-10 w-full mr-10 border-2 rounded-2xl'}>
-        <img className={choosedProduct ? 'mx-auto opacity-20 w-52' : 'mx-auto'} src={img} alt="product" />
+        <img className={choosedProduct ? 'mx-auto opacity-20 w-52 mt-6' : 'mx-auto w-[70%] mt-10'} src={img} alt="product" />
         {
             choosedProduct && (
                 <button className='bg-green-500 text-black bt-0 pt-0 w-full mx-auto pt-3 pb-3 flex items-center justify-center text-white font-bold'>Producto elegido</button>
