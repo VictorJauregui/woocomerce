@@ -1,357 +1,672 @@
-
-
 {
-
-"BestDescount": [
+  "allproducts": [
     {
-        "sell": "OFERTA ACTUAL",
-        "type": "EBOOKS",
-        "name": "NUESTROS 12 EBOOKS",
-        "priceBefore": 144.05,
-        "price": 54.95,
-        "img": "../images/productBestPrices/all-books.png",
-        "qty": 1,
-        "fistParagraph": "En todos estos ebooks encontrarás mas 800 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "OFERTA ACTUAL",
+      "type": "EBOOKS",
+      "name": "NUESTROS 12 EBOOKS",
+      "priceBefore": 144.05,
+      "price": 54.95,
+      "img": "../images/productBestPrices/all-books.png",
+      "qty": 1,
+      "fistParagraph": "En todos estos ebooks encontrarás mas 800 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "sell": "OFERTA ACTUAL",
-        "type": "EXCELS",
-        "name": "2 EXCELS PARA ENTRENADORES DE FÚTBOL",
-        "priceBefore": 122.95,
-        "price": 39.95,
-        "img": "../images/productBestPrices/two-excels.png",
-        "qty": 1,
-        "fistParagraph": "En estos excels encontrarás mas 800 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "OFERTA ACTUAL",
+      "type": "EXCELS",
+      "name": "2 EXCELS PARA ENTRENADORES DE FÚTBOL",
+      "priceBefore": 122.95,
+      "price": 39.95,
+      "img": "../images/productBestPrices/two-excels.png",
+      "qty": 1,
+      "fistParagraph": "En estos excels encontrarás mas 800 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+    {
+      "type": "EBOOK",
+      "name": "ATAQUE-DEFENSA",
+      "price": 8,
+      "img": "../images/ebooks/ataque-defensa.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ATAQUE-DEFENSA, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "A. COMBINADAS",
+      "price": 9,
+      "img": "../images/ebooks/acciones-combinadas.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES COMBINADAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "CIRCUITOS-FISICOS",
+      "price": 12,
+      "img": "../images/ebooks/circuitos-fisicos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de CIRCUITOS-FISICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "JUEGOS DE POSICIÓN",
+      "price": 12,
+      "img": "../images/ebooks/juegos-posicion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de JUEGOS DE POSICIÓN, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "ABP",
+      "price": 12,
+      "img": "../images/ebooks/abp.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES A BALON PARADO, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "P. ESPECÍFICOS",
+      "price": 9,
+      "img": "../images/ebooks/trabajo-puestos-especificos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PUESTOS ESPECÍFICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "TRABAJO POR LINEAS",
+      "price": 18,
+      "img": "../images/ebooks/trabajo-lineas.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TRABAJO POR LINEAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "TECNIFICACIÓN",
+      "price": 16,
+      "img": "../images/ebooks/tecnificacion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TECNIFICACION, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "RUEDAS DE PASE",
+      "price": 7,
+      "img": "../images/ebooks/rueda-pases.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de RUEDAS DE PASE, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "FINALIZACIONES",
+      "price": 11,
+      "img": "../images/ebooks/finalizaciones.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de FINALIZACIONES, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "P. CONDICIONADOS",
+      "price": 12,
+      "img": "../images/ebooks/partidos-condicionados.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PARTIDOS CONDICIONADOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "PARTIDOS REDUCIDOS",
+      "price": 13,
+      "img": "../images/ebooks/partidos-reducidos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+    {
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "ATAQUE-DEFENSA",
+      "price": 12.95,
+      "img": "../images/ebooks/ataque-defensa.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "PART. REDUCIDOS",
+      "price": 49.95,
+      "img": "../images/ebooks/partidos-reducidos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "sell": "TOP VENTAS",
+      "type": "PLANIFICACION",
+      "name": "PLANIFICACION SENIOR",
+      "price": 127.95,
+      "img": "../images/planificaciones/senior.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "JUEGOS DE POSICIÓN",
+      "price": 8.95,
+      "img": "../images/ebooks/juegos-posicion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+    {
+      "type": "EXCEL",
+      "name": "PROGR. TEMPORADA",
+      "price": 47,
+      "img": "../images/excels/analisis.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EXCEL",
+      "name": "SESIONES FUERZA",
+      "price": 12,
+      "img": "../images/excels/fuerza.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EXCEL",
+      "name": "PLANIFICACIÓN TEMP.",
+      "price": 57,
+      "img": "../images/excels/planificacion.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EXCEL",
+      "name": "ESTADÍSTICAS",
+      "price": 14,
+      "img": "../images/excels/estadisticas.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EXCEL",
+      "name": "CUANT. CARGAS",
+      "price": 49,
+      "img": "../images/excels/cargas.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "INFANTIL",
+      "price": 64,
+      "img": "../images/planificaciones/infantiles.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "CADETE",
+      "price": 67,
+      "img": "../images/planificaciones/cadetes.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "JUVENIL",
+      "price": 80,
+      "img": "../images/planificaciones/juveniles.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "SENIOR",
+      "price": 90,
+      "img": "../images/planificaciones/senior.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     }
-
-],
-
-
-
-"Ebooks": [
+  ],
+  "BestDescount": [
     {
-        "type": "EBOOK",
-        "name": "ATAQUE-DEFENSA",
-        "price": 8,
-        "img": "../images/ebooks/ataque-defensa.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ATAQUE-DEFENSA, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-
+      "sell": "OFERTA ACTUAL",
+      "type": "EBOOKS",
+      "name": "NUESTROS 12 EBOOKS",
+      "priceBefore": 144.05,
+      "price": 54.95,
+      "img": "../images/productBestPrices/all-books.png",
+      "qty": 1,
+      "fistParagraph": "En todos estos ebooks encontrarás mas 800 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "EBOOK",
-        "name": "A. COMBINADAS",
-        "price": 9,
-        "img": "../images/ebooks/acciones-combinadas.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES COMBINADAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "CIRCUITOS-FISICOS",
-        "price": 12,
-        "img": "../images/ebooks/circuitos-fisicos.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de CIRCUITOS-FISICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "JUEGOS DE POSICIÓN",
-        "price": 12,
-        "img": "../images/ebooks/juegos-posicion.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de JUEGOS DE POSICIÓN, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "ABP",
-        "price": 12,
-        "img": "../images/ebooks/abp.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES A BALON PARADO, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "P. ESPECÍFICOS",
-        "price": 9,
-        "img": "../images/ebooks/trabajo-puestos-especificos.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PUESTOS ESPECÍFICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "TRABAJO POR LINEAS",
-        "price": 18,
-        "img": "../images/ebooks/trabajo-lineas.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TRABAJO POR LINEAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "TECNIFICACIÓN",
-        "price": 16,
-        "img": "../images/ebooks/tecnificacion.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TECNIFICACION, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "RUEDAS DE PASE",
-        "price": 7,
-        "img": "../images/ebooks/rueda-pases.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de RUEDAS DE PASE, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "FINALIZACIONES",
-        "price": 11,
-        "img": "../images/ebooks/finalizaciones.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de FINALIZACIONES, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "P. CONDICIONADOS",
-        "price": 12,
-        "img": "../images/ebooks/partidos-condicionados.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PARTIDOS CONDICIONADOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EBOOK",
-        "name": "PARTIDOS REDUCIDOS",
-        "price": 13,
-        "img": "../images/ebooks/partidos-reducidos.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "OFERTA ACTUAL",
+      "type": "EXCELS",
+      "name": "2 EXCELS PARA ENTRENADORES DE FÚTBOL",
+      "priceBefore": 122.95,
+      "price": 39.95,
+      "img": "../images/productBestPrices/two-excels.png",
+      "qty": 1,
+      "fistParagraph": "En estos excels encontrarás mas 800 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     }
+  ],
 
-],
-
-"MoreSellsProduct" : [
+  "Ebooks": [
     {
-        "sell": "TOP VENTAS",
-        "type": "EBOOK",
-        "name": "ATAQUE-DEFENSA",
-        "price": 12.95,
-        "img": "../images/ebooks/ataque-defensa.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EBOOK",
+      "name": "ATAQUE-DEFENSA",
+      "price": 8,
+      "img": "../images/ebooks/ataque-defensa.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ATAQUE-DEFENSA, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "sell": "TOP VENTAS",
-        "type": "EBOOK",
-        "name": "PART. REDUCIDOS",
-        "price": 49.95,
-        "img": "../images/ebooks/partidos-reducidos.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EBOOK",
+      "name": "A. COMBINADAS",
+      "price": 9,
+      "img": "../images/ebooks/acciones-combinadas.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES COMBINADAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "sell": "TOP VENTAS",
-        "type": "PLANIFICACION",
-        "name": "PLANIFICACION SENIOR",
-        "price": 127.95,
-        "img": "../images/planificaciones/senior.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EBOOK",
+      "name": "CIRCUITOS-FISICOS",
+      "price": 12,
+      "img": "../images/ebooks/circuitos-fisicos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de CIRCUITOS-FISICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "sell": "TOP VENTAS",
-        "type": "EBOOK",
-        "name": "JUEGOS DE POSICIÓN",
-        "price": 8.95,
-        "img": "../images/ebooks/juegos-posicion.png",
-        "qty": 1,
-        "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EBOOK",
+      "name": "JUEGOS DE POSICIÓN",
+      "price": 12,
+      "img": "../images/ebooks/juegos-posicion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de JUEGOS DE POSICIÓN, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "ABP",
+      "price": 12,
+      "img": "../images/ebooks/abp.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de ACCIONES A BALON PARADO, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "P. ESPECÍFICOS",
+      "price": 9,
+      "img": "../images/ebooks/trabajo-puestos-especificos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PUESTOS ESPECÍFICOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "TRABAJO POR LINEAS",
+      "price": 18,
+      "img": "../images/ebooks/trabajo-lineas.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TRABAJO POR LINEAS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "TECNIFICACIÓN",
+      "price": 16,
+      "img": "../images/ebooks/tecnificacion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de TECNIFICACION, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "RUEDAS DE PASE",
+      "price": 7,
+      "img": "../images/ebooks/rueda-pases.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de RUEDAS DE PASE, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "FINALIZACIONES",
+      "price": 11,
+      "img": "../images/ebooks/finalizaciones.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de FINALIZACIONES, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "P. CONDICIONADOS",
+      "price": 12,
+      "img": "../images/ebooks/partidos-condicionados.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de PARTIDOS CONDICIONADOS, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EBOOK",
+      "name": "PARTIDOS REDUCIDOS",
+      "price": 13,
+      "img": "../images/ebooks/partidos-reducidos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     }
+  ],
 
-],
-
-"Excels": [
+  "MoreSellsProduct": [
     {
-        "type": "EXCEL",
-        "name": "PROGR. TEMPORADA",
-        "price": 47,
-        "img": "../images/excels/analisis.png",
-        "qty": 1,
-        "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "ATAQUE-DEFENSA",
+      "price": 12.95,
+      "img": "../images/ebooks/ataque-defensa.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "EXCEL",
-        "name": "SESIONES FUERZA",
-        "price": 12,
-        "img": "../images/excels/fuerza.png",
-        "qty": 1,
-        "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "PART. REDUCIDOS",
+      "price": 49.95,
+      "img": "../images/ebooks/partidos-reducidos.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "EXCEL",
-        "name": "PLANIFICACIÓN TEMP.",
-        "price": 57,
-        "img": "../images/excels/planificacion.png",
-        "qty": 1,
-        "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "TOP VENTAS",
+      "type": "PLANIFICACION",
+      "name": "PLANIFICACION SENIOR",
+      "price": 127.95,
+      "img": "../images/planificaciones/senior.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "EXCEL",
-        "name": "ESTADÍSTICAS",
-        "price": 14,
-        "img": "../images/excels/estadisticas.png",
-        "qty": 1,
-        "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
-    },
-
-    {
-        "type": "EXCEL",
-        "name": "CUANT. CARGAS",
-        "price": 49,
-        "img": "../images/excels/cargas.png",
-        "qty": 1,
-        "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "sell": "TOP VENTAS",
+      "type": "EBOOK",
+      "name": "JUEGOS DE POSICIÓN",
+      "price": 8.95,
+      "img": "../images/ebooks/juegos-posicion.png",
+      "qty": 1,
+      "fistParagraph": "En este ebook encontrarás mas 40 tareas diferentes de rondos, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     }
+  ],
 
-],
-
-"Planificaciones": [
+  "Excels": [
     {
-        "type": "PLANIFICACIÓN",
-        "name": "INFANTIL",
-        "price": 64,
-        "img": "../images/planificaciones/infantiles.png",
-        "qty": 1,
-        "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EXCEL",
+      "name": "PROGR. TEMPORADA",
+      "price": 47,
+      "img": "../images/excels/analisis.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "PLANIFICACIÓN",
-        "name": "CADETE",
-        "price": 67,
-        "img": "../images/planificaciones/cadetes.png",
-        "qty": 1,
-        "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EXCEL",
+      "name": "SESIONES FUERZA",
+      "price": 12,
+      "img": "../images/excels/fuerza.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "PLANIFICACIÓN",
-        "name": "JUVENIL",
-        "price": 80,
-        "img": "../images/planificaciones/juveniles.png",
-        "qty": 1,
-        "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EXCEL",
+      "name": "PLANIFICACIÓN TEMP.",
+      "price": 57,
+      "img": "../images/excels/planificacion.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     },
 
     {
-        "type": "PLANIFICACIÓN",
-        "name": "SENIOR",
-        "price": 90,
-        "img": "../images/planificaciones/senior.png",
-        "qty": 1,
-        "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
-        "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
-        "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
-        "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+      "type": "EXCEL",
+      "name": "ESTADÍSTICAS",
+      "price": 14,
+      "img": "../images/excels/estadisticas.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "EXCEL",
+      "name": "CUANT. CARGAS",
+      "price": 49,
+      "img": "../images/excels/cargas.png",
+      "qty": 1,
+      "fistParagraph": "En este excel encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
     }
+  ],
 
-]
+  "Planificaciones": [
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "INFANTIL",
+      "price": 64,
+      "img": "../images/planificaciones/infantiles.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
 
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "CADETE",
+      "price": 67,
+      "img": "../images/planificaciones/cadetes.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
 
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "JUVENIL",
+      "price": 80,
+      "img": "../images/planificaciones/juveniles.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    },
+
+    {
+      "type": "PLANIFICACIÓN",
+      "name": "SENIOR",
+      "price": 90,
+      "img": "../images/planificaciones/senior.png",
+      "qty": 1,
+      "fistParagraph": "En esta planificacion encontrarás mas 40 tareas diferentes, desde todas las vertientes, numeros de jugadores, espacios de juegos, volumen de trabajo, etc.",
+      "secondParagraph": "Todos los bbjetivos técnicos – tácticos, reglas de provocación ademas de una gran número de variantes de todas las tareas por lo que tendrás todas las facetas del juego controladas.",
+      "thirdParagraph": "Tiempo de trabajo, tiempo de descanso, número de jugadores y el espacio de juego en cada uno de los rondos para que no tengas ninguna duda de tu trabajo.",
+      "fourthParagraph": "Por último, accederás a representaciones gráfica y en vídeo de todas las tareas para una mejor comprension de las mismas."
+    }
+  ]
 }

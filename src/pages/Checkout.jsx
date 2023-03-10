@@ -73,7 +73,7 @@ const Checkout = () => {
         </div>
         <div className='w-2/4 mt-40 ml-20 pr-20 mr-40'>
           <h2 className='text-4xl font-bold mb-10 text-[#031442]'>Método de Pago</h2>
-          <div>
+          {/* <div>
             <form className='grid grid-cols-2 text-[#031442]' onSubmit={ev =>
               ev.preventDefault()
             } >
@@ -93,11 +93,10 @@ const Checkout = () => {
                 <button className='flex items-center justify-center h-[2rem] bg-[#6366F1] py-2 px-10 rounded-lg text-white text-[1.2rem] mr-10' onClick={()=>setVisible(true)}>Ir a datos bancarios</button>
               </div>
             </form>
-          </div>
+          </div> */}
 
-          {
-            visible && (
-          <div className='mt-20 '>
+          
+          <div className='mt-10 '>
             <div className='flex w-full gap-1'>
               <div className='w-2/4 bg-[#ECECEC] flex items-center justify-center gap-3 rounded-t-lg'>
                 <img className='w-10' src={card} alt="" />
@@ -134,9 +133,6 @@ const Checkout = () => {
             </div>
 
           </div>
-
-            )
-          }
         </div> 
       </div>
       <Footer />
