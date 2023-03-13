@@ -10,19 +10,17 @@ export const allContext = createContext();
 const MY_AUTH_APP = "MY_AUTH_APP_1";
 
 const Context = ({ children }) => {
-  const [products, setProducts] = useState(
-    JSON.parse(localStorage.getItem("cart")) || []
-  );
+  const [products, setProducts] = useState(JSON.parse(localStorage.getItem("cart")) || []);
   const [isOpen, setIsOpen] = useState(false);
   const [counterCart, setCountesCart] = useState(0);
   const [currentProduct, setCurrentProduct] = useState({});
   const [buyProducts, setBuyProducts] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    window.localStorage.getItem(MY_AUTH_APP) ?? false
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP) ?? false);
+  const [user, setUser] = useState("");
+  const [password, setPassword] = useState("");
 
-  const login = useCallback(function () {
-    window.localStorage.setItem(MY_AUTH_APP, true);
+  const login = useCallback(function () 
+    {window.localStorage.setItem(MY_AUTH_APP, true);
     setIsAuthenticated(true);
   }, []);
 
@@ -58,6 +56,10 @@ const Context = ({ children }) => {
         setCurrentProduct,
         buyProducts,
         setBuyProducts,
+        user, 
+        setUser,
+        password, 
+        setPassword
       }}
     >
       {children}

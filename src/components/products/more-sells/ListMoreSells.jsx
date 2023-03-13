@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import imgTop from '../../../assets/images/icon-top.png';
-import { MoreSellsProduct } from '../../../data/MoreSellsProduct.jsx';
 import SingularProductMoreSell from './SingularProductMoreSell';
 
 

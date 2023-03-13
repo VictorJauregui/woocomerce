@@ -4,7 +4,7 @@ import cart from '../../assets/images/cart.png'
 import { allContext } from '../../context/Context'
 
 const ModalAddToCart = () => {
-    const {counterCart, products, } = useContext(allContext)
+    const {  products } = useContext(allContext)
 
     const totalProducts = products.reduce((acc, current) => acc + current.qty, 0);  return (
 

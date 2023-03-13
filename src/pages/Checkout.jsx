@@ -13,7 +13,7 @@ const Checkout = () => {
 
 
   
-  const { products, setProducts, setCountesCart } = useContext(allContext)
+  const { products, setProducts, setCountesCart, user } = useContext(allContext)
   const total = products.reduce((acc, current) => acc + current.price * current.qty, 0);
   console.log(products)
 

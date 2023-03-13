@@ -3,10 +3,9 @@ import logo from "../assets/images/logo.png";
 import { allContext } from "../context/Context";
 
 const Login = () => {
-  const { value } = useContext(allContext);
+  const { value, user, setUser,  password, setPassword } = useContext(allContext);
   const { login } = value;
-  const [user, setUser] = useState("");
-  const [password, setPassword] = useState("");
+
 
   const handleInputChange = (event) => {
     setUser(event.target.value);
@@ -18,7 +17,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (user === "alonbalon" && password === "alonbalon") {
+    if (user === "assembler" && password === "alonbalon") {
       login();
     }
   };
@@ -32,7 +31,7 @@ const Login = () => {
           </h2>
           <form className="mt-10" onSubmit={handleSubmit}>
             <div className="flex flex-col text-[#031442]">
-              <label htmlFor="">Email</label>
+              <label htmlFor="">Usuario</label>
               <input
                 value={user}
                 onChange={handleInputChange}

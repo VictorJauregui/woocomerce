@@ -8,7 +8,8 @@ import gif from '../assets/images/gif.gif'
 
 
 const PedidoRealizado = () => {
-  const { products } = useContext(allContext)
+  const { products, user } = useContext(allContext)
+  console.log(user)
   const total = products.reduce((acc, current) => acc + current.price * current.qty, 0);
 
   const [showContent, setShowContent] = useState(false);
@@ -34,7 +35,7 @@ const PedidoRealizado = () => {
     {
       showContent && 
       <div className='mt-40 text-center text-[#031442]'>
-        <h2 className='text-[3rem] font-bold'>¡Enhorabuena, Víctor!</h2>
+        <h2 className='text-[3rem] font-bold'>¡Enhorabuena, {user}!</h2>
         <h3 className='text-[2.5rem] font-bold'>Tu pedido se ha realizado correctamente</h3>
         <h4 className='text-[1.8rem] mt-8'>Ya te hemos enviado todo el material a tu correo eléctrónico.</h4>
         <h4 className='text-[1.8rem]'>Aquí tienes los datos de tu compra.</h4>
@@ -53,7 +54,7 @@ const PedidoRealizado = () => {
                       <img className='grid col-span-2 w-40' src={product.img} alt="" />
                       <p className='grid col-span-4'>{`${product.type} ${product.name}`}</p>
                       <p className='grid col-span-1'>{product.qty}</p>
-                      <p className='grid col-span-2 justify-end mr-2'>{product.price * product.qty}€</p>
+                      <p className='grid col-span-2 justify-end mr-2'>{(product.price * product.qty).toFixed(2)}€</p>
                      </div>
                   )
                 })
