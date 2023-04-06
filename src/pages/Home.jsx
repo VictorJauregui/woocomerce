@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Alberto from '../components/workerTaks/Alberto';
 import Borja from '../components/workerTaks/Borja';
 import Jesus from '../components/workerTaks/Jesus';
@@ -9,17 +9,16 @@ import { v4 } from 'uuid'
 
 
 export const Home = () => {
-  const { todoList, setTodoList} = useContext(toDoContext);
+  const { addTodo, getTodos } = useContext(toDoContext);
 
-  const addTodo = (e) => {
+  const handleAddTodo = (e) => {
     e.preventDefault()
-    setTodoList([...todoList, {...formData, id: v4()}])
+    addTodo(formData)
   }
   
   const [formData, setFormData ] = useState({
-    id: "",
-    task: "",
-    name: "Victor",
+    title: "",
+    worker: "Victor",
     priority: "Alta",
     status: "Pending"
   })
@@ -28,16 +27,21 @@ export const Home = () => {
     const handleChangeFormData = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
+
+  useEffect(() => {
+    getTodos()
+  }, [])
+  
   
     return (
     <div className='bg-[#031442] h-screen' >
-        <form className='bg-white w-1/3 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={addTodo}>
+        <form className='bg-white w-1/3 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={handleAddTodo}>
             <div className='grid grid-cols-4 w-full gap-3 px-10 pt-4' >
                 <div className='flex flex-col col-span-2'>
                     <label className='text-xl' htmlFor="task">Tarea</label>
                     <input className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded w-full"
-                        value={formData.task}
-                        name="task"
+                        value={formData.title}
+                        name="title"
                         type="text"
                         id="task"
                         onChange={handleChangeFormData}
@@ -46,8 +50,8 @@ export const Home = () => {
                 <div className='flex flex-col'>
                 <label className='text-xl' htmlFor='worker'>Worker</label>   
                     <select className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded"
-                        value={formData.name}
-                        name="name"
+                        value={formData.worker}
+                        name="worker"
                         id="worker"
                         onChange={handleChangeFormData}>
                         <option value="Victor">Víctor</option>

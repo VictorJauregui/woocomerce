@@ -8,7 +8,7 @@ const Alberto = () => {
 
     const { todoList, setTodoList } = useContext(toDoContext);
     
-    const albertoTasks = todoList.filter((todo) => todo.name === "Alberto" && todo.status === "Pending");
+    const albertoTasks = todoList.filter((todo) => todo.worker === "Alberto" && todo.status === "Pending");
 
     const inProgress = (alberto) => {
         const filterTasks = todoList.filter((todo) => {
@@ -31,7 +31,7 @@ const Alberto = () => {
                 const color = priority === "Alta"? "bg-red-300 border-red-800 mt-2" : priority === "Media"? "bg-blue-300 border-blue-800 mt-2": "bg-green-300 border-green-800 mt-2";
                 return (
                     <div className={`${color} w-5/6 rounded border flex flex-col`}>
-                        <p className='m-2'>{alberto.task}</p>
+                        <p className='m-2'>{alberto.title}</p>
                         <div className='flex gap-1 justify-end mb-2 mr-2'>
                             <NavLink to="/in-progress">
                                 <img className='w-6 h-6 cursor-pointer' src={working} alt="" onClick={() => inProgress(alberto)} />
