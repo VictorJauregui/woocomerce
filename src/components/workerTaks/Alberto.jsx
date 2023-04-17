@@ -6,19 +6,26 @@ import { NavLink } from 'react-router-dom';
 
 const Alberto = () => {
 
-    const { todoList, setTodoList } = useContext(toDoContext);
+    const { todoList, setTodoList, deleteTodo } = useContext(toDoContext);
     
     const albertoTasks = todoList.filter((todo) => todo.worker === "Alberto" && todo.status === "Pending");
 
+    
     const inProgress = (alberto) => {
         const filterTasks = todoList.filter((todo) => {
-            return todo.id !== alberto.id
+            return todo._id !== alberto._id
         })
         setTodoList([...filterTasks, {...alberto, status: "In progress"}])
+
+
     }
+    
 
     const deleteTask = (alberto) => {
-        const deleteTask = todoList.filter((todo) => todo.id !== alberto.id );
+        
+        deleteTodo(alberto._id)
+        const deleteTask = todoList.filter((todo) => todo._id !== alberto._id );
+        console.log(todoList)
         setTodoList(deleteTask)
     }
 

@@ -6,6 +6,7 @@ import Miquel from '../components/workerTaks/Miquel';
 import Victor from '../components/workerTaks/Victor';
 import { toDoContext } from '../context/Context'
 import { v4 } from 'uuid'
+import Nav from '../components/workerTaks/NavBar';
 
 
 export const Home = () => {
@@ -34,6 +35,8 @@ export const Home = () => {
   
   
     return (
+      <>
+      <Nav />
     <div className='bg-[#031442] h-screen' >
         <form className='bg-white w-1/3 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={handleAddTodo}>
             <div className='grid grid-cols-4 w-full gap-3 px-10 pt-4' >
@@ -86,6 +89,7 @@ export const Home = () => {
 
 
     </div>
+    </>
     
   )
 }

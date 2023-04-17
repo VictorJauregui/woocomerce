@@ -1,0 +1,5 @@
+export const LOGIN = "/login"
+export const HOME = "/"
+export const INPROGRESS = "/inprogress"
+export const COMPLETED = "/completado"
+export const PRIVATE = "/private"

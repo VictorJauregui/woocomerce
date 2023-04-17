@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Victor = () => {
 
-    const { todoList, setTodoList } = useContext(toDoContext);
+    const { todoList, setTodoList, deleteTodo} = useContext(toDoContext);
 
     const inProgress = (victor) => {
         const filterTasks = todoList.filter((todo)=>{
@@ -16,6 +16,7 @@ const Victor = () => {
     }
 
     const deleteTask = (victor) => {
+        deleteTodo(victor._id)
         const deleteTask = todoList.filter((todo) => todo.id !== victor.id)
         setTodoList(deleteTask);
     }

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { toDoContext } from '../context/Context';
+import Nav from '../components/workerTaks/NavBar';
 
 export const Completed = () => {
 
@@ -18,6 +19,8 @@ export const Completed = () => {
 
 
     return (
+      <>
+      <Nav />
       <div className='bg-[#031442] h-[70vh]'>
         <div className='w-2/4 bg-white mx-auto rounded-xl'>
           <h2 className='text-4xl text-[#031442] flex justify-center py-5 '>Tareas Completadas</h2>
@@ -40,6 +43,7 @@ export const Completed = () => {
     
         </div>
       </div>
+      </>
 
     )
     
