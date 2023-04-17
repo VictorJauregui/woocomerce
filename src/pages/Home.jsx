@@ -5,7 +5,6 @@ import Jesus from '../components/workerTaks/Jesus';
 import Miquel from '../components/workerTaks/Miquel';
 import Victor from '../components/workerTaks/Victor';
 import { toDoContext } from '../context/Context'
-import { v4 } from 'uuid'
 import Nav from '../components/workerTaks/NavBar';
 
 
@@ -31,7 +30,7 @@ export const Home = () => {
 
   useEffect(() => {
     getTodos()
-  }, [])
+  }, [getTodos])
   
   
     return (

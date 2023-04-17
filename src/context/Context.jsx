@@ -53,7 +53,7 @@ export const ToDosProvider = ({children}) => {
     }
 
     const deleteTodo = async (id) => {
-        const res = await fetch(`http://localhost:4000/deletetodo/${id}`,{
+        await fetch(`http://localhost:4000/deletetodo/${id}`,{
             method: "DELETE", 
         })  
         
