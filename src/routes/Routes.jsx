@@ -4,9 +4,9 @@ import { Completed } from '../pages/Completed'
 import { Home } from '../pages/Home'
 import { InProgress } from '../pages/InProgress'
 import Login from '../pages/Login'
-import { COMPLETED, HOME, INPROGRESS, LOGIN} from './paths'
+import { COMPLETED, INPROGRESS, LOGIN} from './paths'
 import PublicRoute from '../components/router/PublicRoute'
-import PrivateRoute from '../components/router/PublicRoute'
+import PrivateRoute from '../components/router/PrivateRoute'
 
 export const PathRoutes = () => {
   return (
@@ -14,7 +14,7 @@ export const PathRoutes = () => {
         <BrowserRouter>
             <Routes >
               <Route path={LOGIN} element={<PublicRoute/>}>
-                <Route path={LOGIN} element={<Login/>}/>
+                <Route index element={<Login/>}/>
               </Route>
               <Route path="/" element={<PrivateRoute />}>
                 <Route index element={<Home />}/>

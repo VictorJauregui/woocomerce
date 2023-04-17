@@ -5,7 +5,6 @@ import RegisterInApp from '../components/RegisterInApp'
 
 const Login = () => {
     const [signIn, setSignIn] = useState(true)
-    console.log(signIn)
 
     
   return (

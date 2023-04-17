@@ -7,7 +7,8 @@ const MY_AUTH_APP = "MY_AUTH_APP_1";
 export const ToDosProvider = ({children}) => {
     const [todoList, setTodoList] = useState(JSON.parse(localStorage.getItem("todo")) || []);
     const [allUser, setAllUser] = useState([])
-    const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP)) ?? false
+    // const [isAuthenticated, setIsAuthenticated] = useState(false)
+    const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP) ?? false) 
     
     const login = useCallback(function() {
         window.localStorage.setItem(MY_AUTH_APP, true);
@@ -81,9 +82,10 @@ export const ToDosProvider = ({children}) => {
         })
         const data = await res.json()
         console.log(data)
-        // if(data.ok){
-            
-        // }
+        if(data.ok){
+            setIsAuthenticated(true)
+            console.log(isAuthenticated)
+        }
     }
     return (
         <toDoContext.Provider value={{ todoList, setTodoList, addTodo, getTodos, deleteTodo, allUser, setAllUser, registerUser, loginUser, newValue}}>
