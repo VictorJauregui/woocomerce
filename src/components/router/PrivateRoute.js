@@ -6,10 +6,8 @@ import { LOGIN  } from '../../routes/paths'
 const PrivateRoute = () => {
     const { newValue } = useContext(toDoContext)
     const {isAuthenticated} = newValue;
-    console.log(isAuthenticated)
 
     if(!isAuthenticated){
-        console.log("MIQUEL")
         return <Navigate to={LOGIN}/>
     }
 

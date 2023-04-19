@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { toDoContext } from '../context/Context';
 import rubish from '../assets/images/rubish.png'
 import check from '../assets/images/check.png'
@@ -9,10 +9,11 @@ export const InProgress = () => {
     const { todoList, setTodoList, deleteTodo } = useContext(toDoContext);
     
     const inProgressTasks = todoList.filter((task) => {
-        return task.status === "In progress"
-        
+        return task.status === "In progress"   
     })
+    
 
+    
 
     const completed = (task)=>{
         const filterTask = todoList.filter((todo) => {
@@ -34,11 +35,10 @@ export const InProgress = () => {
         <>
         <Nav />
         <div className='bg-[#031442] h-screen'>
-            <div className='bg-white w-2/4 flex flex-col items-center mx-auto rounded-xl'  >
+            <div className='bg-white w-[95%] md:w-5/6 xl:w-3/4 2xl:w-3/5 flex flex-col items-center mx-auto rounded-xl'  >
                 <h2 className='text-4xl mb-7 mt-7 text-[#031442]'>In progress</h2>
                 {
                 inProgressTasks.map((task)=> {
-                    console.log(task)
                     return (
                     <div className='grid grid-cols-12 w-5/6 justify-center pt-2 pb-2 border-b-2 mb-5'>
                         <p className='text-xl flex col-span-3 justify-center'>{task.title}</p>

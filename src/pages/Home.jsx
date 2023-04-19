@@ -9,11 +9,12 @@ import Nav from '../components/workerTaks/NavBar';
 
 
 export const Home = () => {
-  const { addTodo, getTodos } = useContext(toDoContext);
+  const { addTodo, getTodos, setTodoList, todoList } = useContext(toDoContext);
 
   const handleAddTodo = (e) => {
     e.preventDefault()
     addTodo(formData)
+    setTodoList([...todoList, formData])
   }
   
   const [formData, setFormData ] = useState({
@@ -30,15 +31,18 @@ export const Home = () => {
 
   useEffect(() => {
     getTodos()
-  }, [getTodos])
+  }, [])
   
   
     return (
       <>
       <Nav />
-    <div className='bg-[#031442] h-screen' >
-        <form className='bg-white w-1/3 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={handleAddTodo}>
-            <div className='grid grid-cols-4 w-full gap-3 px-10 pt-4' >
+    <div className='bg-[#031442] pb-20' >
+        <form className='bg-white w-4/5 lg:w-2/3 xl:w-2/3 2xl:w-2/4 mx-auto rounded-xl flex flex-col items-center mb-20' onSubmit={handleAddTodo}>
+          <div className='border-b border-[#031442] w-full flex justify-center '>
+            <h2 className='text-2xl font-bold my-2 text-[#031442] '>Crear tarea</h2>
+          </div>
+            <div className='grid grid-cols-1 lg:grid-cols-4 w-full gap-3 px-10 pt-4' >
                 <div className='flex flex-col col-span-2'>
                     <label className='text-xl' htmlFor="task">Tarea</label>
                     <input className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded w-full"
@@ -76,11 +80,11 @@ export const Home = () => {
                     </select>
                 </div>
             </div>
-            <button className='bg-[#6366F1] py-1 my-7 text-white rounded w-1/6'>Asignar tarea</button>
+            <button className='bg-[#6366F1] py-1 my-7 text-white rounded w-2/6'>Asignar tarea</button>
         </form>  
-            <div className='flex justify-around mt-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 justify-around mt-10'>
                 <Miquel />
-                <Victor />
+                <Victor/>
                 <Jesus />
                 <Borja />
                 <Alberto setFormData={setFormData} formData={formData}/>

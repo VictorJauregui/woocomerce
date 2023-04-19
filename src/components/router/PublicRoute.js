@@ -6,7 +6,6 @@ import { HOME } from "../../routes/paths";
 const PublicRoute = () => {
   const { newValue } = useContext(toDoContext);
     const { isAuthenticated } = newValue;
-    console.log(isAuthenticated)
 
 
   if (isAuthenticated) {

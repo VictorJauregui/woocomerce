@@ -7,7 +7,6 @@ const MY_AUTH_APP = "MY_AUTH_APP_1";
 export const ToDosProvider = ({children}) => {
     const [todoList, setTodoList] = useState(JSON.parse(localStorage.getItem("todo")) || []);
     const [allUser, setAllUser] = useState([])
-    // const [isAuthenticated, setIsAuthenticated] = useState(false)
     const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP) ?? false) 
     
     const login = useCallback(function() {
@@ -30,11 +29,10 @@ export const ToDosProvider = ({children}) => {
 
     useEffect (() => {
         localStorage.setItem("todo", JSON.stringify(todoList))
-    }, [todoList])
+    }, [])
 
     const addTodo = async (todo) => {
         
-        console.log(todo)
         const res = await fetch("http://localhost:4000/todo", {
             method: "POST", 
             headers: {
@@ -42,8 +40,21 @@ export const ToDosProvider = ({children}) => {
           },
             body: JSON.stringify(todo)
         })
+        await res.json()
+    }
+
+    const editTodo = async (todoId, newValue) => {
+        console.log(todoId, newValue)
+        
+        const res = await fetch("http://localhost:4000/edittodo", {
+            method: "POST", 
+            headers: {
+            "Content-Type": "application/json",
+          },
+            body: JSON.stringify({todoId, newValue})
+        })
         const data = await res.json()
-        console.log(data)
+        return data
     }
 
     const getTodos = async () => {
@@ -68,8 +79,8 @@ export const ToDosProvider = ({children}) => {
             body: JSON.stringify(user)
             
         })
-        const data = await res.json()
-        console.log(data)
+        await res.json()
+
     }
 
     const loginUser = async (user) => {
@@ -81,14 +92,13 @@ export const ToDosProvider = ({children}) => {
             body: JSON.stringify(user)
         })
         const data = await res.json()
-        console.log(data)
+
         if(data.ok){
             setIsAuthenticated(true)
-            console.log(isAuthenticated)
         }
     }
     return (
-        <toDoContext.Provider value={{ todoList, setTodoList, addTodo, getTodos, deleteTodo, allUser, setAllUser, registerUser, loginUser, newValue}}>
+        <toDoContext.Provider value={{ todoList, setTodoList, addTodo, getTodos, deleteTodo, allUser, setAllUser, registerUser, loginUser, newValue, editTodo}}>
             {children}
         </toDoContext.Provider>
     )

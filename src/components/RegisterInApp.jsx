@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import logo from '../assets/images/logo.png'
 import google from '../assets/images/google.png'
 import { toDoContext } from '../context/Context'
+import logoBlue from '../assets/images/logo-blue.png'
 
 const RegisterInApp = ({setSignIn}) => {
     const {registerUser} = useContext(toDoContext)
@@ -27,10 +28,12 @@ const RegisterInApp = ({setSignIn}) => {
     }
 
   return (
-    <div className='flex'>
-        <div className='flex w-1/2 items-center'>
-            <div className='w-2/5 mx-auto'>
-                 <h2 className='font-bold text-4xl text-[#031442]'>Crea tu cuenta</h2> 
+    <div className='lg:flex h-screen'>
+        <div className='flex lg:w-1/2 items-center lg:h-screen'>
+        
+        <div className='h-screen flex flex-col justify-center lg: lg:h-1/2 w-4/6 sm:w-3/6 lg:w-4/6 xl:w-3/5 2xl:w-2/5 mx-auto'>
+                 <img className='mb-12 w-60 mx-auto lg:hidden' src={logoBlue} alt="logo blue" />
+                 <h2 className='font-bold text-4xl text-[#031442] mt-10 lg:mt-0 '>Crea tu cuenta</h2> 
                  <form onClick={handleSubmit} className='mt-8' action="">
                     <div className='flex flex-col mt-4'>
                         <label className='text-xl text-[#031442]'>Nombre</label>
@@ -81,7 +84,7 @@ const RegisterInApp = ({setSignIn}) => {
                  </div>
             </div>
         </div>
-        <div className='bg-[#031442] w-1/2 h-screen flex justify-center items-center'>
+        <div className='bg-[#031442] lg:w-1/2 h-1/2 lg:h-screen hidden lg:flex justify-center items-center'>
            <img src={logo} alt="logo" className=' w-1/2 ' />
         </div>
      
