@@ -1,8 +1,5 @@
 import React, { useContext } from 'react'
 import { toDoContext } from '../../context/Context';
-import rubish from '../../assets/images/rubish.png'
-import working from '../../assets/images/working.png'
-import { NavLink } from 'react-router-dom';
 import IndividualTask from '../IndividualTask';
 
 const Victor = () => {
