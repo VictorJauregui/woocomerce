@@ -6,7 +6,7 @@ import logoBlue from '../assets/images/logo-blue.png'
 
 
 const LoginInApp = ({setSignIn }) => {
-    const { loginUser} = useContext(toDoContext);
+    const { loginUser, setIsAuthenticated} = useContext(toDoContext);
 
     const [user, setUser] = useState({
         email: "",
@@ -25,6 +25,9 @@ const LoginInApp = ({setSignIn }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         loginUser(user)
+        if(user.email === "alonbalon@alonbalon.com" & user.pass === "alonbalon") {
+            setIsAuthenticated(true)
+        }
 
     }
 

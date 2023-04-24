@@ -55,7 +55,7 @@ export const ToDosProvider = ({children}) => {
         console.log(todoId, newValue)
         
         const res = await fetch("http://localhost:4000/edittodo", {
-            method: "POST", 
+            method: "PATCH", 
             headers: {
             "Content-Type": "application/json",
           },
