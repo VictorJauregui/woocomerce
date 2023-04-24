@@ -54,7 +54,7 @@ export const Home = () => {
                         />
                 </div>
                 <div className='flex flex-col'>
-                <label className='text-xl' htmlFor='worker'>Worker</label>   
+                <label className='text-xl' htmlFor='worker'>Trabajador</label>   
                     <select className="bg-[#F4F4F4] border-2 border-gray-400 h-8 rounded"
                         value={formData.worker}
                         name="worker"

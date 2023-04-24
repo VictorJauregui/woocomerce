@@ -1,14 +1,12 @@
 import React, { useContext, useState } from 'react'
 import logo from '../assets/images/logo.png'
-import google from '../assets/images/google.png'
 import { toDoContext } from '../context/Context';
 import logoBlue from '../assets/images/logo-blue.png'
 
-const LoginInApp = ({setSignIn }) => {
-    const { loginUser, loginWithGoogle, googleUser, registerUser } = useContext(toDoContext);
-    const { email, uid, displayName } = googleUser
-    console.log(googleUser)
 
+
+const LoginInApp = ({setSignIn }) => {
+    const { loginUser} = useContext(toDoContext);
 
     const [user, setUser] = useState({
         email: "",
@@ -30,12 +28,6 @@ const LoginInApp = ({setSignIn }) => {
 
     }
 
-    const handlesignInWithGoogle = (e) => {
-        e.preventDefault()
-        loginWithGoogle()
-        const user = {name:displayName, email:email, pass: uid, repPass: uid}
-        registerUser(user)
-    }
     
     
   return (
@@ -48,10 +40,11 @@ const LoginInApp = ({setSignIn }) => {
                     <div className='flex flex-col'>
                         <label className='text-xl text-[#031442]'>Email</label>
                         <input className='border border-[#E2E8F0] h-[2.5rem] rounded' 
-                        type="text"
+                        type="email"
                         value={user.email}
                         name="email"
-                        onChange={handleChange} />
+                        onChange={handleChange} 
+                        required/>
                     </div>
                     <div className='flex flex-col mt-4'>
                         <label className='text-xl text-[#031442] '>Contraseña</label>
@@ -59,16 +52,13 @@ const LoginInApp = ({setSignIn }) => {
                         type="password"
                         value={user.pass}
                         name="pass"
-                        onChange={handleChange} />
+                        onChange={handleChange} 
+                        required/>
                     </div>
                     <div className='flex justify-end'>
                         <button className='bg-[#6366F1] text-white px-3 py-2 rounded mt-5' type="submit" >Iniciar sesion</button>
                     </div>
                  </form>
-                <div className='flex justify-center items-center gap-6 border mt-10 border-[#E2E8F0] h-[2.5rem] rounded cursor-pointer hover:bg-red-300' onClick={(e)=>handlesignInWithGoogle(e)}  >
-                    <img className='h-4/5' src={google} alt="" />
-                    <p className='text-[#031442] '>Entrar con google</p>
-                </div>
                 <div className='flex justify-end mt-5'>
                     <p>¿Aun no tienes cuenta? <span className='text-[#6366F1] cursor-pointer' onClick={handleSignIn} >Regístrate aquí</span></p>
                 </div>
@@ -81,5 +71,6 @@ const LoginInApp = ({setSignIn }) => {
     </div>
   )
 }
+
 
 export default LoginInApp

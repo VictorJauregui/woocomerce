@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { toDoContext } from '../context/Context';
 import rubish from '../assets/images/rubish.png'
 import check from '../assets/images/check.png'
@@ -19,7 +19,7 @@ export const InProgress = () => {
         const filterTask = todoList.filter((todo) => {
             return todo._id !== task._id
         })
-        console.log(filterTask)
+        
         setTodoList([...filterTask, {...task, status: "Completed" }])
         updateTodoStatus(task, "Completed")
     }   

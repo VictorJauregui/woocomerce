@@ -16,8 +16,7 @@ const Alberto = () => {
         setTodoList([...filterTasks, {...alberto, status: "In progress"}])
         updateTodoStatus(alberto, "In progress")
     }
-    
-    console.log(todoList)
+
 
     const deleteTask = (alberto) => {
         
