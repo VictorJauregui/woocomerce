@@ -26,10 +26,11 @@ const RegisterInApp = ({setSignIn}) => {
         e.preventDefault()
         if(register.pass === register.repPass){
             registerUser(register)
-            toast.success("Usuario creado con éxito")
-            return
+            toast.success("Usuario creado con éxito");
+        } else {
+            toast.error("Las contraseñas no coinciden")
+
         }
-        toast.error("Las contraseñas no coinciden")
     }
 
   return (
@@ -68,6 +69,7 @@ const RegisterInApp = ({setSignIn}) => {
                         name="pass"
                         onChange={handleChange} 
                         required
+                        minLength="8"
                         />
                     </div>
                     <div className='flex flex-col mt-4'>
@@ -78,6 +80,7 @@ const RegisterInApp = ({setSignIn}) => {
                         name="repPass"
                         onChange={handleChange} 
                         required
+                        minLength="8"
                         />
                     </div>
                     <div className='flex justify-end mt-5'>

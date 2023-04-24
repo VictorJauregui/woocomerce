@@ -53,7 +53,9 @@ const LoginInApp = ({setSignIn }) => {
                         value={user.pass}
                         name="pass"
                         onChange={handleChange} 
-                        required/>
+                        required
+                        minlength="8"
+                        />
                     </div>
                     <div className='flex justify-end'>
                         <button className='bg-[#6366F1] text-white px-3 py-2 rounded mt-5' type="submit" >Iniciar sesion</button>
