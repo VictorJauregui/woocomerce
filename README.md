@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+## Alonbalon App for a 5-employee Company
+This repository contains a Todo App designed for a company with 5 employees. The app allows users to register and then log in to create tasks for each employee, as well as assign a level of importance to each task. Additionally, employees can put each of their tasks in the "in progress" and "completed" states.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App Features
+1. Registration and Login: users can register and then log in to the app.
+2. Task Creation: users can create tasks for each employee, and can also set a level of importance for each task.
+3. Task Status Updates: employees can update the status of their tasks to "in progress" or "completed."
+4. Task Updates: employes can change the task if they want and change and save with another title.
+4. Logging into the Platform
 
-## Available Scripts
+## You can log into the platform using the username "alonbalon@alonbalon.com" and the password "alonbalon".
 
-In the project directory, you can run:
+# Technologies Used
+The app was built using the following technologies:
+1. React.js for the frontend
+2. Node.js and Express for the backend
+3. MongoDB for the database
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Installation and Execution
+Clone the repository on your computer using git clone https://github.com/VictorJauregui/woocomerce.git and change the branch to "todo"
+Install the dependencies in the server folder with npm install
+Repeat step 2 in the client folder.
+Run the server with npm run server and the client with npm start.
+That's it! The app can now be accessed through your web browser at http://localhost:3000. (http://localhost:4000 on the back)
