@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import Nav from '../components/workerTaks/NavBar';
 
 export const InProgress = () => {
-    const { todoList, setTodoList, deleteTodo } = useContext(toDoContext);
+    const { todoList, setTodoList, deleteTodo, updateTodoStatus } = useContext(toDoContext);
     
     const inProgressTasks = todoList.filter((task) => {
         return task.status === "In progress"   
@@ -17,9 +17,11 @@ export const InProgress = () => {
 
     const completed = (task)=>{
         const filterTask = todoList.filter((todo) => {
-            return todo.id !== task.id
+            return todo._id !== task._id
         })
+        console.log(filterTask)
         setTodoList([...filterTask, {...task, status: "Completed" }])
+        updateTodoStatus(task, "Completed")
     }   
 
     const deleteTask = (task) => {

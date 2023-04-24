@@ -4,6 +4,8 @@ import working from '../assets/images/working.png'
 import { NavLink } from 'react-router-dom'
 import { toDoContext } from '../context/Context'
 import pencil from '../assets/images/pencil.png'
+import acept from '../assets/images/acept.png'
+import cancel from '../assets/images/cancel.png'
 
 const IndividualTask = ({color, worker, inProgress, deleteTask}) => {
   const {editTodo, setTodoList, todoList} = useContext(toDoContext)
@@ -40,12 +42,14 @@ const IndividualTask = ({color, worker, inProgress, deleteTask}) => {
     <div className={`${color} w-5/6 rounded border flex flex-col`}>
             { isEditing ?
                       <>
-                      <input type="text" 
+                      <input className='bg-[#b6c3d1] border-dashed border-2 border-[#adbac8] mb-4' type="text" 
                       value={inputValue}
                       onChange={handleChangeInputValue}
                       />
-                      <button onClick={handleEditTodo}>Aceptar</button>
-                      <button onClick={handleCancelTodo}>Cancelar</button>
+                      <div className='flex gap-2 justify-end mr-2 pb-2'>
+                        <img className='w-6 cursor-pointer' onClick={handleEditTodo} src={acept} alt="" />
+                        <img className='w-6 cursor-pointer' onClick={handleCancelTodo} src={cancel} alt="" />
+                      </div>
                       </>
                       :
                       <>

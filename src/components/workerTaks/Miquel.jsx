@@ -4,13 +4,14 @@ import IndividualTask from '../IndividualTask';
 
 const Miquel = () => {
 
-    const { todoList, setTodoList, deleteTodo } = useContext(toDoContext);
+    const { todoList, setTodoList, deleteTodo, updateTodoStatus } = useContext(toDoContext);
     
     const inProgress = (miquel) => {
         const filterTasks = todoList.filter((todo) => {
             return todo.worker !== miquel.worker
             
         })
+        updateTodoStatus(miquel, "In progress")
         setTodoList([...filterTasks, {...miquel, status: "In progress"}])
    }
 

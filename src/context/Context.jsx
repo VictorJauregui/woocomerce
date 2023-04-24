@@ -1,13 +1,43 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import { auth } from '../firebase.config';
+import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged } from 'firebase/auth'
 
 
 export const toDoContext = React.createContext();
 const MY_AUTH_APP = "MY_AUTH_APP_1";
 
+export const useAuth = () => {
+    const context = useAuth(toDoContext)
+    if(!context){
+        console.log("error")
+    }
+    return context
+
+}
+
 export const ToDosProvider = ({children}) => {
     const [todoList, setTodoList] = useState(JSON.parse(localStorage.getItem("todo")) || []);
     const [allUser, setAllUser] = useState([])
-    const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP) ?? false) 
+    const [isAuthenticated, setIsAuthenticated] = useState(window.localStorage.getItem(MY_AUTH_APP) ?? false)
+    
+    const [googleUser, setGoogleUser] = useState("")
+    useEffect(() => {
+        const subscribed = onAuthStateChanged(auth, (currentUser)=>{
+            if(!currentUser){
+                console.log("no hay usuario suscrito")
+                setGoogleUser("")
+            } else {
+                setGoogleUser(currentUser)
+            }  
+        })
+        return () => subscribed()
+    }, [])
+    
+
+    const loginWithGoogle = async () => {
+        const responseGoogle = new GoogleAuthProvider()
+        return await signInWithPopup(auth, responseGoogle)
+    }
     
     const login = useCallback(function() {
         window.localStorage.setItem(MY_AUTH_APP, true);
@@ -40,7 +70,10 @@ export const ToDosProvider = ({children}) => {
           },
             body: JSON.stringify(todo)
         })
-        await res.json()
+        const data = await res.json()
+        console.log(data)
+        setTodoList([...todoList, data.todo])
+        
     }
 
     const editTodo = async (todoId, newValue) => {
@@ -67,10 +100,19 @@ export const ToDosProvider = ({children}) => {
         await fetch(`http://localhost:4000/deletetodo/${id}`,{
             method: "DELETE", 
         })  
+        console.log(id)
+        
+    }
+
+    const deleteAllTodos = async () => {
+        await fetch('http://localhost:4000/deletealltodos',{
+            method: "DELETE", 
+        })  
         
     }
 
     const registerUser = async(user) => {
+        // console.log(user)
         const res = await fetch("http://localhost:4000/register", {
             method: "POST",
             headers: {
@@ -79,9 +121,13 @@ export const ToDosProvider = ({children}) => {
             body: JSON.stringify(user)
             
         })
-        await res.json()
-
+        const data = await res.json()
+        console.log(data)
+        if(data.ok){
+            setIsAuthenticated(true)
+        }
     }
+
 
     const loginUser = async (user) => {
         const res = await fetch ("http://localhost:4000/login", {
@@ -97,8 +143,21 @@ export const ToDosProvider = ({children}) => {
             setIsAuthenticated(true)
         }
     }
+
+const updateTodoStatus = async(todo, status) => {
+    const res = await fetch ("http://localhost:4000/updatetodostatus", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({todo, status})
+        })
+        const data = await res.json()
+        console.log(data)
+    }
+
     return (
-        <toDoContext.Provider value={{ todoList, setTodoList, addTodo, getTodos, deleteTodo, allUser, setAllUser, registerUser, loginUser, newValue, editTodo}}>
+        <toDoContext.Provider value={{ todoList, setTodoList, addTodo, getTodos, deleteTodo, allUser, setAllUser, registerUser, loginUser, newValue, editTodo, loginWithGoogle, googleUser, setIsAuthenticated, updateTodoStatus, deleteAllTodos}}>
             {children}
         </toDoContext.Provider>
     )

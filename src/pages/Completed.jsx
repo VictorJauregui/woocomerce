@@ -4,7 +4,7 @@ import Nav from '../components/workerTaks/NavBar';
 
 export const Completed = () => {
 
-  const { todoList, setTodoList } = useContext(toDoContext);
+  const { todoList, setTodoList, deleteAllTodos } = useContext(toDoContext);
 
   const taskCompleted = todoList.filter((todo) => {
     return todo.status === "Completed"
@@ -15,6 +15,7 @@ export const Completed = () => {
       return todo.status === "Completed"
     })
     setTodoList([])
+    deleteAllTodos(todoList)
   }
 
 

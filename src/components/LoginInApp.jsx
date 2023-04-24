@@ -5,7 +5,10 @@ import { toDoContext } from '../context/Context';
 import logoBlue from '../assets/images/logo-blue.png'
 
 const LoginInApp = ({setSignIn }) => {
-    const { loginUser } = useContext(toDoContext);
+    const { loginUser, loginWithGoogle, googleUser, registerUser } = useContext(toDoContext);
+    const { email, uid, displayName } = googleUser
+    console.log(googleUser)
+
 
     const [user, setUser] = useState({
         email: "",
@@ -27,7 +30,13 @@ const LoginInApp = ({setSignIn }) => {
 
     }
 
-
+    const handlesignInWithGoogle = (e) => {
+        e.preventDefault()
+        loginWithGoogle()
+        const user = {name:displayName, email:email, pass: uid, repPass: uid}
+        registerUser(user)
+    }
+    
     
   return (
     <div className='lg:flex h-screen'>
@@ -56,7 +65,7 @@ const LoginInApp = ({setSignIn }) => {
                         <button className='bg-[#6366F1] text-white px-3 py-2 rounded mt-5' type="submit" >Iniciar sesion</button>
                     </div>
                  </form>
-                <div className='flex justify-center items-center gap-6 border mt-10 border-[#E2E8F0] h-[2.5rem] rounded cursor-pointer hover:bg-red-300' >
+                <div className='flex justify-center items-center gap-6 border mt-10 border-[#E2E8F0] h-[2.5rem] rounded cursor-pointer hover:bg-red-300' onClick={(e)=>handlesignInWithGoogle(e)}  >
                     <img className='h-4/5' src={google} alt="" />
                     <p className='text-[#031442] '>Entrar con google</p>
                 </div>

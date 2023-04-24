@@ -9,12 +9,12 @@ import Nav from '../components/workerTaks/NavBar';
 
 
 export const Home = () => {
-  const { addTodo, getTodos, setTodoList, todoList } = useContext(toDoContext);
+  const { addTodo, getTodos} = useContext(toDoContext);
 
   const handleAddTodo = (e) => {
     e.preventDefault()
     addTodo(formData)
-    setTodoList([...todoList, formData])
+
   }
   
   const [formData, setFormData ] = useState({

@@ -4,7 +4,7 @@ import IndividualTask from '../IndividualTask';
 
 const Borja = () => {
 
-    const { todoList, setTodoList, deleteTodo } = useContext(toDoContext);
+    const { todoList, setTodoList, deleteTodo, updateTodoStatus } = useContext(toDoContext);
 
     const deleteTask = (borja) => {
         deleteTodo(borja._id)
@@ -17,6 +17,7 @@ const Borja = () => {
             return todo._id !== borja._id
         })
         setTodoList([...filterTasks, {...borja, status: "In progress"}])
+        updateTodoStatus(borja, "In progress")
     }
     
     const borjaTasks = todoList.filter((todo) => todo.worker === "Borja" && todo.status === "Pending");
